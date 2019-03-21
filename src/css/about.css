@@ -48,6 +48,7 @@
     background: url('../assets/placeholder.jpg');
     background-size: cover;
     background-position: center center;
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -58,6 +59,15 @@
 
     .about, .headshot {
         width: 50%;
+    }
+
+    .about {
+        /* margin-right: 10px; */
+    }
+
+    .headshot {
+        margin-top: 0;
+        /* margin-left: 10px; */
     }
 
     .about-video {

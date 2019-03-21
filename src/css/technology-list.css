@@ -1,0 +1,33 @@
+.technology-list-section {
+    background: blue;
+    background: url('../assets/foggy-mtns.jpg');
+    margin: 0 40px;
+}
+
+.tech-list-ul {
+    display: grid;
+    grid-template-columns: auto;
+    list-style: none;
+    padding:  40px 0;
+}
+
+.tech-svg {
+    padding: 40px;
+}
+
+@media (min-width: 540px) {
+    .tech-list-ul {
+        grid-template-columns: auto auto;       
+    }
+}
+
+@media (min-width: 768px) {
+    .tech-list-ul {
+        grid-template-columns: auto auto auto auto auto;       
+    }
+
+    .tech-svg {
+        max-width: 150px;
+        padding: 20px;
+    }
+}

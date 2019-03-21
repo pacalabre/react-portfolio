@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import About from '../About';
 import Navbar from '../Navbar';
 import Headshot from '../Headshot';
+import TechnologyList from '../TechnologyList';
 
 class Home extends React.Component {
     render() {
@@ -10,7 +11,7 @@ class Home extends React.Component {
             <div>
                 <Navbar />
                 <About />
-                
+                <TechnologyList />
                 <p>Projects</p>
                 <ul className="ul">
                     {Object.keys(this.props.posts).map(key => 
