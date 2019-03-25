@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    margin: 40px;
+    margin: 40px 40px 20px 40px;
     flex-direction: column;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .about-p span {
-    color: #3742fa;
+    color: #0612df;
 }
 
 .headshot {
@@ -62,12 +62,16 @@
     }
 
     .about {
-        /* margin-right: 10px; */
+        margin-right: 10px;
+    }
+
+    .about-p {
+        font-size: 18px;
     }
 
     .headshot {
         margin-top: 0;
-        /* margin-left: 10px; */
+        margin-left: 10px;
     }
 
     .about-video {
@@ -80,22 +84,17 @@
         z-index: 1;
     }
 
-    .about-p {
-        font-size: 20px
-    }
-
 }
 
 @media (min-width: 1000px) {
-
     .about-p {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 
     .about-p {
-        font-size: 27px;
+        font-size: 25px;
     }
 }

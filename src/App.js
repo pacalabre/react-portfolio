@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Nav from './components/Nav';
 import Home from './components/pageComponents/Home';
 import IndividualProject from './components/pageComponents/individualProject';
 import NotFound from './components/pageComponents/NotFound';
 import axios from 'axios';
+import Navigation from './components/Navigation';
 
 class App extends Component {
   state = {
@@ -34,11 +36,15 @@ class App extends Component {
 
   render() {
     return (
-      <Switch>
-        <Route path="/:project" render={()=> <IndividualProject />} /> 
-        <Route path="/" render = {()=>  <Home posts={ this.state.posts } /> } />
-        <Route component = { NotFound } />
-      </Switch>
+      <React.Fragment>
+        {/* <Nav /> */}
+        <Navigation />
+        <Switch>
+          <Route path="/:project" render={()=> <IndividualProject />} /> 
+          <Route path="/" render = {()=>  <Home posts={ this.state.posts } /> } />
+          <Route component = { NotFound } />
+        </Switch>
+      </React.Fragment>
     )
   }
 }

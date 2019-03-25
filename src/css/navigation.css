@@ -1,0 +1,155 @@
+a {
+    color: #0612df;
+}
+
+.navbar {
+    display: block;
+}
+
+.navigation {
+    display: block;
+    margin: 20px 0;
+    padding: 0 40px;
+    position: relative;
+    background: white;
+    transition: .2s;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    right: 25PX;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    fill: black;
+    opacity: 1;
+    color: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.navigation-text {
+    font-size: 35px;
+    color: #252525;
+    /* display: flex; */
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link a {
+    color: rgba(0,0,0,1);
+}
+
+.navigation-h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-bottom-div {
+    display: flex;
+    border-top: solid 7px #252525;
+    align-items: center;
+    width: 75%;
+}
+
+.navigation-p {
+    margin-top: 0;
+    padding-top: 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navigation-ul {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-ul-li {
+    list-style: none;
+    padding: 0 7px;
+    font-size: 20px;
+}
+
+.mobile-social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-a {
+    padding: 0 10px;
+}
+
+.desktop-social-icons {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    a:hover {
+        color: #050ead;
+    }
+
+    .navigation-h1 {
+        font-size:35px;
+    }
+
+    .nav-bottom-div {
+        width: 85%;
+    }
+
+    .navigation-p {
+        font-size: 18px;
+    }
+
+    .navbar-toggler {
+        right: 60px;
+        top: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navigation-text {
+        display: flex;
+    }
+
+    .navigation-p {
+        width: 100%;
+    }
+
+    .nav-bottom-div {
+        width: 100%
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    /* Override bootstrap height 0 that they inject inline into the DOM */
+    .navbar-collapse {
+        height: auto !important;
+    }
+
+    .link-to {
+        padding: 0 10px 5px 0;
+        font-size: 25px; 
+    }
+
+    .bottom-nav {
+        display: flex;
+    }
+
+    .mobile-social-icons { 
+        display: none;
+    }
+
+    .desktop-social-icons {
+        display: flex;
+    }
+
+    .social-icons-a {
+        font-size: 25px;
+    }
+}
