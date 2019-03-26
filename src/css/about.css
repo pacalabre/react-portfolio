@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    margin: 40px 40px 20px 40px;
+    margin: 0px 0 20px 0;
     flex-direction: column;
 }
 
@@ -45,7 +45,7 @@
 
 .headshot {
     height: 400px;
-    background: url('../assets/placeholder.jpg');
+    background: url('../assets/placeholder2.jpg');
     background-size: cover;
     background-position: center center;
     margin-top: 20px;

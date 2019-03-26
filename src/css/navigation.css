@@ -9,7 +9,7 @@ a {
 .navigation {
     display: block;
     margin: 20px 0;
-    padding: 0 40px;
+    padding: 0 20px;
     position: relative;
     background: white;
     transition: .2s;
@@ -97,7 +97,7 @@ a {
     }
 
     .nav-bottom-div {
-        width: 85%;
+        width: 87%;
     }
 
     .navigation-p {
@@ -105,7 +105,7 @@ a {
     }
 
     .navbar-toggler {
-        right: 60px;
+        right: 45px;
         top: 45px;
     }
 }

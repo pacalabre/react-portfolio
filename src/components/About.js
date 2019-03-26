@@ -18,14 +18,13 @@ class About extends React.Component {
                         powder in the mountains.
                         </p>
                         <video muted autoPlay loop className="about-video">
-                        <source src={ aboutVid } type="video/mp4" />
-                        <source src={ aboutVid } type="video/ogg" />
-                        Your browser does not support the video tag.
-                    </video>
+                            <source src={ aboutVid } type="video/mp4" />
+                            <source src={ aboutVid } type="video/ogg" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
                 <div className="headshot"></div>
-                
             </section>
         )
     }

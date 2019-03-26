@@ -1,7 +1,11 @@
+path {
+    fill: #e8e8e8;
+}
 .technology-list-section {
     background: blue;
-    background: url('../assets/foggy-mtns.jpg');
-    margin: 0 40px;
+    background: url('../assets/placeholer3.jpg');
+    margin: 0;
+    background-position: bottom right;
 }
 
 .tech-list-ul {

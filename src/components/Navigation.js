@@ -33,8 +33,8 @@ class Navigation extends React.Component {
                         <Link className="link-to" to="/:projectID">work</Link>
                         <Link className="link-to" to="/notfound">contact</Link>
                         <div className="mobile-social-icons">
-                            <a className="social-icons-a"><span className="icon-social-linkedin nav-ul-social"></span></a>
-                            <a className="social-icons-a"><span className="icon-social-github nav-ul-social"></span></a>
+                            <a className="social-icons-a" href="#"><span className="icon-social-linkedin nav-ul-social"></span></a>
+                            <a className="social-icons-a" href="#"><span className="icon-social-github nav-ul-social"></span></a>
                         </div>
                         </Nav>
                     </Navbar.Collapse>
