@@ -26,7 +26,7 @@
     background: rgba(36,36,36,.2);
     background: rgba(36,36,36,.2);
     z-index: 2000;
-    height: AUTO;
+    height: auto;
     width: auto;
     display: flex;
 }
@@ -87,8 +87,17 @@
 }
 
 @media (min-width: 1000px) {
+
     .about-p {
         font-size: 20px;
+    }
+
+    .about-p-background {
+        height: 80vh;
+    }
+
+    .headshot {
+        height: 80vh;
     }
 }
 
