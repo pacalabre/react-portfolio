@@ -18,7 +18,6 @@
 .work-gallery-div {
     transition: .4s;
     margin-bottom: 60px;
-    background: #2c3e50;
 }
 
 .work-gallery-img-div {
@@ -34,8 +33,7 @@
     font-weight: 800;
     display: inline-flex;
     margin: 5px 5px 0 5px;
-    color: white;
-    border-bottom: solid white 2px;
+    color: #242424;
 }
 
 .work-gallery-project-desc {
@@ -43,7 +41,7 @@
     font-weight: 200;
     display: inline-flex;
     padding: 0 5px 0px 5px;
-    color: white;
+    color: #242424;
     margin-bottom: 5px;
 }
 
@@ -56,6 +54,10 @@
     .work-gallery-div:hover {
         transform: scale(1.02);
         box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    }
+
+    .work-gallery-div:hover .work-gallery-project-name {
+        color: #e74c3c;
     }
 
 }

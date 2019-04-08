@@ -24,6 +24,12 @@ a:hover {
   color: initial;
 }
 
+@media ( min-width: 768px ) {
+  a:hover {
+    color: #e74c3c;
+  }
+}
+
 /* .test-background {
   background: url('./images/foggy-mtns.jpg');
 } */
