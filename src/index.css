@@ -21,6 +21,7 @@ code {
 
 a:hover {
   text-decoration: none;
+  color: initial;
 }
 
 /* .test-background {

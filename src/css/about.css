@@ -37,10 +37,11 @@
     padding: 20px;
     margin: auto;
     z-index: 200;
+    text-shadow: 0.5px 0.5px 50px black;
 }
 
 .about-p span {
-    color: #0612df;
+    color: #3498db;
 }
 
 .headshot {
@@ -66,7 +67,7 @@
     }
 
     .about-p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .headshot {
@@ -79,7 +80,6 @@
         position: absolute;
         right: 0;
         top: 0;
-        /* bosttom: 0; */
         width: auto;
         z-index: 1;
     }
@@ -89,7 +89,7 @@
 @media (min-width: 1000px) {
 
     .about-p {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .about-p-background, .headshot {

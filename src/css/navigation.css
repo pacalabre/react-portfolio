@@ -50,7 +50,7 @@ a {
 
 .nav-bottom-div {
     display: flex;
-    border-top: solid 7px #252525;
+    border-top: solid 7px #2c3e50;
     align-items: center;
     width: 75%;
 }
@@ -89,7 +89,7 @@ a {
 
 @media (min-width: 768px) {
     a:hover {
-        color: #050ead;
+        color: #e74c3c;
     }
 
     .navigation-h1 {
