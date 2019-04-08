@@ -32,7 +32,7 @@
     font-size: 18px;
     font-weight: 800;
     display: inline-flex;
-    margin: 5px 5px 0 5px;
+    margin: 10px 5px 0 5px;
     color: #242424;
 }
 
@@ -42,7 +42,7 @@
     display: inline-flex;
     padding: 0 5px 0px 5px;
     color: #242424;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
