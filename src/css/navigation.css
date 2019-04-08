@@ -88,7 +88,7 @@ a {
 
 
 @media (min-width: 768px) {
-    a:hover {
+    a:hover, a:hover .nav-ul-social {
         color: #e74c3c;
     }
 
