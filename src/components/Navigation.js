@@ -6,6 +6,7 @@ import IndividualProject from './pageComponents/individualProject';
 import NotFound from './pageComponents/NotFound';
 
 class Navigation extends React.Component {
+    
     render() {
         return (
             // <nav className="navigation">

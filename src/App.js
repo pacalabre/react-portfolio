@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
+import FooterComponent from './components/FooterComponent';
 import Home from './components/pageComponents/Home';
 import IndividualProject from './components/pageComponents/individualProject';
 import NotFound from './components/pageComponents/NotFound';
@@ -43,6 +44,7 @@ class App extends Component {
           <Route path="/" render = {()=>  <Home posts={ this.state.posts } /> } />
           <Route component = { NotFound } />
         </Switch>
+        <FooterComponent />
       </React.Fragment>
     )
   }
