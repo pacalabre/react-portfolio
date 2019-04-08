@@ -92,12 +92,10 @@
         font-size: 20px;
     }
 
-    .about-p-background {
+    .about-p-background, .headshot {
         height: 80vh;
-    }
-
-    .headshot {
-        height: 80vh;
+        min-height: 350px;
+        max-height: 500px;
     }
 }
 
