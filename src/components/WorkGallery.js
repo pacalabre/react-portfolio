@@ -18,8 +18,10 @@ class WorkGallery extends React.Component {
                                 <div className="work-gallery-img-div">
                                     <img alt="project image" className="work-gallery-img" src={this.props.posts[key].jetpack_featured_media_url} />
                                 </div>
-                                <h3 className="work-gallery-project-name">{this.props.posts[key].title.rendered}</h3>
-                                <p className="work-gallery-project-desc">Some descriptive text</p>
+                                <div className="work-gallery-project-text">
+                                    <h3 className="work-gallery-project-name">{this.props.posts[key].title.rendered}</h3>
+                                    {/* <p className="work-gallery-project-desc">Some descriptive text</p> */}
+                                </div>
                             </Link>
                         </div>    
                     )}

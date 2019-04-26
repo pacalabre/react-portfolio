@@ -7,22 +7,26 @@ a {
 }
 
 .navbar-nav {
-    background: #2c3e50;
+    border: #2c3e50 solid 7px;
     width: 75%;
+    border-bottom: none;
 }
 
 .link-to {
-    color: white;
     padding: 7px;
 }
 
 .navigation {
     display: block;
-    margin: 20px 0;
-    padding: 0 20px;
-    position: relative;
+    padding: 20px;
     background: white;
     transition: .2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
 }
 
 .navbar-toggler {
@@ -43,7 +47,6 @@ a {
 .navigation-text {
     font-size: 35px;
     color: #252525;
-    /* display: flex; */
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: 400;
@@ -89,19 +92,27 @@ a {
 
 .social-icons-a {
     padding: 0 10px;
-    color: white;
 }
 
 .desktop-social-icons {
     display: none;
 }
 
-.link-to:hover, a:hover .nav-ul-social {
-    color: white;
-}
-
-
 @media (min-width: 768px) {
+
+    .navigation{
+        position: static;
+        box-shadow: none;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .mobile-social-icons {
+        justify-content: center
+    }
+
     .link-to:hover, a:hover .nav-ul-social {
         color: #e74c3c;
     }
@@ -125,6 +136,11 @@ a {
 }
 
 @media (min-width: 992px) {
+
+    .navbar-nav {
+        border: none;
+    }
+
     .navigation-text {
         display: flex;
     }

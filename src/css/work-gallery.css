@@ -18,6 +18,9 @@
 .work-gallery-div {
     transition: .4s;
     margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .work-gallery-img-div {
@@ -26,6 +29,14 @@
 
 .work-gallery-img {
     max-width: 100%;;
+}
+
+.work-gallery-project-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    transition: .5s;
 }
 
 .work-gallery-project-name {
@@ -39,7 +50,7 @@
 .work-gallery-project-desc {
     font-size: 16px;
     font-weight: 200;
-    display: inline-flex;
+    display: block;
     padding: 0 5px 0px 5px;
     color: #242424;
     margin-bottom: 10px;
@@ -56,8 +67,13 @@
         box-shadow: 5px 5px 10px rgba(0,0,0,.3);
     }
 
+    .work-gallery-div:hover .work-gallery-project-text {
+        bottom:0;
+    }
+
     .work-gallery-div:hover .work-gallery-project-name {
         color: #e74c3c;
+        transition: .5s;
     }
 
 }
