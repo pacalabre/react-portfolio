@@ -19,8 +19,7 @@ class WorkGallery extends React.Component {
                                     <img alt="project image" className="work-gallery-img" src={this.props.posts[key].jetpack_featured_media_url} />
                                 </div>
                                 <div className="work-gallery-project-text">
-                                    <h3 className="work-gallery-project-name">{this.props.posts[key].title.rendered}</h3>
-                                    {/* <p className="work-gallery-project-desc">Some descriptive text</p> */}
+                                    <h3 className="work-gallery-project-name" dangerouslySetInnerHTML= {{ __html: this.props.posts[key].excerpt.rendered }}></h3>
                                 </div>
                             </Link>
                         </div>    
