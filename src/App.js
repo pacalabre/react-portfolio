@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import FooterComponent from './components/FooterComponent';
@@ -40,7 +40,7 @@ class App extends Component {
       <React.Fragment>
         <Navigation />
         <Switch>
-          <Route path="/:project" render={()=> <IndividualProject />} /> 
+          <Route path="/:project" component={withRouter(IndividualProject)} /> 
           <Route path="/" render = {()=>  <Home posts={ this.state.posts } /> } />
           <Route component = { NotFound } />
         </Switch>

@@ -14,7 +14,12 @@ class WorkGallery extends React.Component {
                 <div className="work-gallery">
                     {Object.keys(this.props.posts).map(key => 
                         <div className="work-gallery-div" key={key}>
-                            <Link to={ this.props.posts[key].slug }>
+                            <Link to={{
+                                pathname: this.props.posts[key].slug ,
+                                state: {
+                                    post: this.props.posts[key]
+                                }
+                            }}>
                                 <div className="work-gallery-img-div">
                                     <img alt="project image" className="work-gallery-img" src={this.props.posts[key].jetpack_featured_media_url} />
                                 </div>
