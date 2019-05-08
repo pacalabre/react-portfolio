@@ -16,5 +16,4 @@ class IndividualProject extends React.Component {
     }
 }
 
-
 export default IndividualProject;
