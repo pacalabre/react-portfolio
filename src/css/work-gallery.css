@@ -68,7 +68,7 @@
     }
 
     .work-gallery-div:hover .work-gallery-project-text {
-        bottom: -15px;
+        bottom: 0;
     }
 
     .work-gallery-div:hover .work-gallery-project-name {

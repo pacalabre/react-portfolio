@@ -9,24 +9,14 @@ class Navigation extends React.Component {
     
     render() {
         return (
-            // <nav className="navigation">
-            //     <div className="navigation-text">
-            //         <div>
-            //             <h1 className="navigation-h1">PAUL CALABRESE</h1>
-            //         </div>
-            //         <ul className="navigation-ul">
-            //             <li className="navigation-ul-li">ABOUT</li>
-            //             <li className="navigation-ul-li">WORK</li>
-            //             <li className="navigation-ul-li">CONTACT</li>
-            //         </ul>
-            //     </div>
-            //     <p className="navigation-p">Front End Dev | Seattle, WA</p>
-            // </nav>
             <Navbar className="navigation" expand="lg">
                 <div className="navigation-text">
-                    <Navbar.Brand href="#home">
+                   
+                    <Link className="nav-link-home"  to="/">
                         <h1 className="navigation-h1">PAUL CALABRESE</h1>
-                    </Navbar.Brand>
+                    </Link>
+                        
+                   
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
@@ -43,8 +33,8 @@ class Navigation extends React.Component {
                 <div className="nav-bottom-div">
                     <p className="navigation-p">Front End Dev | Seattle, WA</p>
                     <div className="desktop-social-icons">
-                        <a className="social-icons-a"><span className="icon-social-linkedin nav-ul-social"></span></a>
-                        <a className="social-icons-a"><span className="icon-social-github nav-ul-social"></span></a>
+                        <a className="social-icons-a" href="#"><span className="icon-social-linkedin nav-ul-social"></span></a>
+                        <a className="social-icons-a" href="#"><span className="icon-social-github nav-ul-social"></span></a>
                     </div>
                 </div>
             </Navbar>

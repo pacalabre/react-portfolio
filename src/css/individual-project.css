@@ -1,0 +1,51 @@
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 40px auto 80px auto;
+    display: inline;
+    display: block;
+}
+
+.project-img {
+    margin-bottom: 0;
+}
+
+.project-img-and-title-section {
+    margin: 220px 40px 160px 40px;
+}
+
+.project-img-and-title-section a {
+    background: red;
+    color: white;
+    border-radius: 20px;
+    display: block;
+}
+
+@media (min-width:768px) {
+
+    img {
+        width: 70%;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .project-img-and-title-section {
+        margin: 40px;
+        width: 40%;
+    } 
+
+    .project-img {
+        margin-left: 0;
+    }
+
+    .project-img-section {
+        width: 60%;
+    }
+
+    .project-img {
+        width: 70%;
+    }
+}
