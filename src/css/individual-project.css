@@ -7,12 +7,33 @@ img {
     display: block;
 }
 
+main a {
+    min-width: 8rem;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    margin: 0 5px;
+    display: block;
+    padding: 7px 10px;
+    border-radius: 0px;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
 .project-img {
     margin-bottom: 0;
 }
 
 .project-img-and-title-section {
     margin: 220px 40px 160px 40px;
+    text-align: left;
+}
+
+.project-img-section p {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
 }
 
 .project-img-and-title-section a {
@@ -33,7 +54,7 @@ img {
     }
 
     .project-img-and-title-section {
-        margin: 40px;
+        margin: 0 40px;
         width: 40%;
     } 
 
@@ -47,5 +68,11 @@ img {
 
     .project-img {
         width: 70%;
+    }
+
+    main a:hover {
+        text-decoration: none;
+        background-color: #7F2A21;
+        color: #E5E5E5;
     }
 }
