@@ -24,11 +24,29 @@ a:hover {
   color: initial;
 }
 
+/* Position Footer at Bottom of Page */
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+#root {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+}
+
 @media ( min-width: 768px ) {
   a:hover {
     color: #e74c3c;
   }
 }
+
 
 /* .test-background {
   background: url('./images/foggy-mtns.jpg');
