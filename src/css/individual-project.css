@@ -7,7 +7,7 @@ img {
     display: block;
 }
 
-main a {
+.project-post-content a {
     min-width: 8rem;
     border: none;
     background-color: #e74c3c;
@@ -25,8 +25,18 @@ main a {
     margin-bottom: 0;
 }
 
+.breadcrumbs {
+    margin: 160px 0 0 20px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.breadcrumbs a {
+    font-weight: 200;
+}
+
 .project-img-and-title-section {
-    margin: 220px 40px 160px 40px;
+    margin: 40px 40px 160px 40px;
     text-align: left;
 }
 
@@ -47,9 +57,14 @@ main a {
 
     img {
         width: 70%;
+        margin: 40px auto;
     }
 
-    main {
+    .breadcrumbs {
+        margin: 0 20px;
+    }
+
+    .project-post-content {
         display: flex;
     }
 
@@ -59,6 +74,7 @@ main a {
     } 
 
     .project-img {
+        margin-top: 0;
         margin-left: 0;
     }
 
@@ -70,7 +86,7 @@ main a {
         width: 70%;
     }
 
-    main a:hover {
+.project-post-content a:hover {
         text-decoration: none;
         background-color: #7F2A21;
         color: #E5E5E5;
