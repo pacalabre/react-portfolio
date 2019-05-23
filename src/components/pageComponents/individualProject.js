@@ -10,6 +10,8 @@ class IndividualProject extends React.Component {
         if(!this.props.location.state) {
             return <Route component={ NotFound }/>
         }
+
+
         return (
             <main>
                 <div className="breadcrumbs">
@@ -19,6 +21,15 @@ class IndividualProject extends React.Component {
                     <section className="project-img-and-title-section">
                         <img className="project-img" src={this.props.location.state.post.jetpack_featured_media_url }/>
                         <p dangerouslySetInnerHTML={{ __html: this.props.location.state.post.excerpt.rendered }}></p>
+                        <i class="devicon-html5-plain-wordmark colored dev-icon"></i>
+                        <i class="devicon-css3-plain-wordmark colored dev-icon"></i>
+                        {
+                            this.props.location.state.post['_embedded']['wp:term'][0].map(tagName =>
+                                <i key={tagName.id} 
+                                    className={"devicon-"+`${tagName.name === `angularjs` || tagName.name === `javascript` ?  tagName.name+"-plain" : tagName.name+"-plain-wordmark"}`+" dev-icon colored"}>
+                                </i>
+                            )
+                        }
                     </section>
                     <section className="project-img-section">
                         <p dangerouslySetInnerHTML={{ __html: this.props.location.state.post.content.rendered }}></p>

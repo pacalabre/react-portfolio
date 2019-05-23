@@ -7,6 +7,12 @@ img {
     display: block;
 }
 
+.breadcrumbs {
+    margin: 160px 0 0 20px;
+    text-transform: uppercase;
+    display: block;
+}
+
 .project-post-content a {
     min-width: 8rem;
     border: none;
@@ -25,12 +31,6 @@ img {
     margin-bottom: 0;
 }
 
-.breadcrumbs {
-    margin: 160px 0 0 20px;
-    text-transform: uppercase;
-    display: block;
-}
-
 .breadcrumbs a {
     font-weight: 200;
 }
@@ -38,6 +38,11 @@ img {
 .project-img-and-title-section {
     margin: 40px 40px 160px 40px;
     text-align: left;
+}
+
+.dev-icon {
+    font-size: 60px;
+    padding: 5px;
 }
 
 .project-img-section p {
