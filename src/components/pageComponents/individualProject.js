@@ -18,7 +18,8 @@ class IndividualProject extends React.Component {
                 <Link to="/">home</Link> / <Link to="/:projectID">work</Link> / <span>{this.props.location.state.post.title.rendered}</span>
                 </div>
                 <div className="project-post-content">
-                    <section className="project-img-and-title-section">
+                <section className="project-img-and-title-section">
+                    <div className="fixed-container">
                         <img className="project-img" src={this.props.location.state.post.jetpack_featured_media_url }/>
                         <p dangerouslySetInnerHTML={{ __html: this.props.location.state.post.excerpt.rendered }}></p>
                         <div className="tech-list">
@@ -32,7 +33,8 @@ class IndividualProject extends React.Component {
                                 )
                             }
                         </div>
-                    </section>
+                    </div>
+                </section>
                     <section className="project-img-section">
                         <p dangerouslySetInnerHTML={{ __html: this.props.location.state.post.content.rendered }}></p>
                     </section>

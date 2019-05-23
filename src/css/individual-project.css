@@ -82,6 +82,11 @@ img {
         width: 40%;
     } 
 
+    .fixed-container {
+        width: 40%;
+        position: fixed;
+    }
+
     .project-img {
         margin-top: 0;
         margin-left: 0;
