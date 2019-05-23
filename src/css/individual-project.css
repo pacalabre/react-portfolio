@@ -84,6 +84,7 @@ img {
 
     .fixed-container {
         width: 40%;
+        max-width: 500px;
         position: fixed;
     }
 
