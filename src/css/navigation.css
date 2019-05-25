@@ -174,7 +174,7 @@ a {
     }
 
     .link-to {
-        padding: 0 10px 5px 0;
+        padding: 0 0px 5px 10px;
         font-size: 25px; 
         color: #252525;
     }
