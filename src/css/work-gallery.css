@@ -1,11 +1,14 @@
 .work-section {
     padding: 40px 0;
+    text-align: center;
 }
 
 .work-title {
     text-align: center;
     font-size: 40px;
-    padding: 20px 0;
+    padding-top: 20px;
+    border-bottom: solid 7px #2c3e50;
+    display: inline-block;
 }
 
 .work-gallery {
@@ -13,6 +16,7 @@
     grid-template-columns: 1fr;
     grid-column-gap: 60px;
     padding: 0 20px;
+    margin-top: 60px;
 }
 
 .work-gallery-div {
@@ -66,7 +70,7 @@
 @media (min-width: 768px) {
 
     .work-gallery {
-        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
     }
 
     .work-gallery-div:hover {
