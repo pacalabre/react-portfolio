@@ -42,6 +42,7 @@ img {
 .tech-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .dev-icon {
     font-size: 60px;
@@ -80,7 +81,11 @@ img {
     .project-img-and-title-section {
         margin: 0 40px;
         width: 40%;
-    } 
+    }
+    
+    .tech-list {
+        justify-content: left;
+    }
 
     .fixed-container {
         width: 40%;
