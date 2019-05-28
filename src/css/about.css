@@ -27,17 +27,24 @@
     background: rgba(36,36,36,.2);
     z-index: 2000;
     height: auto;
-    width: auto;
+    width: 100%;
     display: flex;
 }
 
 .about-p{
     color: white;
     font-size: 25px;
-    padding: 20px;
+    padding: 60px 20px;
     margin: auto;
     z-index: 200;
     text-shadow: 0.5px 0.5px 50px black;
+}
+
+.about-p p, .about-p span {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 1.8em;
+    text-transform: uppercase;
 }
 
 .about-p span {
@@ -50,6 +57,12 @@
     background-size: cover;
     background-position: center center;
     margin-top: 20px;
+}
+
+@media (min-width: 540px) {
+    .about-p p, .about-p span {
+        font-size: 2.5em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -68,7 +81,11 @@
     }
 
     .about-p {
-        font-size: 18px;
+        padding: 20px;
+    }
+
+    .about-p p, .about-p span {
+        font-size: 1.8em;
     }
 
     .headshot {
@@ -98,11 +115,14 @@
         min-height: 350px;
         max-height: 500px;
     }
+
+    .about-p p, .about-p span {
+        font-size: 3em;
+    }
 }
 
 @media (min-width: 1300px) {
-
-    .about-p {
-        font-size: 25px;
+    .about-p p, .about-p span {
+        font-size: 3.65em;
     }
 }

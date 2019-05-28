@@ -4,6 +4,7 @@ import About from '../About';
 import Headshot from '../Headshot';
 import TechnologyList from '../TechnologyList';
 import WorkGallery from '../WorkGallery';
+import Contact from '../Contact';
 
 class Home extends React.Component {
     render() {
@@ -12,6 +13,7 @@ class Home extends React.Component {
                 <About />
                 <WorkGallery posts={this.props.posts} />
                 <TechnologyList />
+                <Contact />
             </div>
         )
     }
