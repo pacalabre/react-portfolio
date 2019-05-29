@@ -134,8 +134,16 @@ a {
         font-size: 18px;
     }
 
+    .navigation-h1-span {
+        transition: .5s;
+    }
+
     .nav-link-home:hover {
         color: initial;
+    }
+
+    .navigation-h1:hover .navigation-h1-span {
+        color:#346b95;
     }
 
 }

@@ -14,7 +14,9 @@ class Navigation extends React.Component {
                 <div className="navigation-text">
                    
                     <Link className="nav-link-home"  to="/">
-                        <h1 className="navigation-h1">PAUL CALABRESE</h1>
+                        <h1 className="navigation-h1">
+                            <span className="navigation-h1-span">P</span>AUL <span className="navigation-h1-span">C</span>ALABRESE
+                        </h1>
                     </Link>
                         
                    
