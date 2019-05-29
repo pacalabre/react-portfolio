@@ -1,0 +1,28 @@
+.contact-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+form button {
+    min-width: 8rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 7px 10px;
+    border-radius: 0px;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    button:hover {
+        text-decoration: none;
+        background-color: #3579ac;
+        color: #E5E5E5;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+        transition: .3s;
+    }
+}

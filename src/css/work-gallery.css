@@ -3,14 +3,6 @@
     text-align: center;
 }
 
-.work-title {
-    text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
-    border-bottom: solid 7px #2c3e50;
-    display: inline-block;
-}
-
 .work-gallery {
     display: grid;
     grid-template-columns: 1fr;
