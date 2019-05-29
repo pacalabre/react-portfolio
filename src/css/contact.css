@@ -19,7 +19,7 @@ textarea {
     height: 150px;
 }
 
-form button {
+form .submit-button {
     min-width: 8rem;
     border: none;
     background-color: #3498db;
@@ -39,7 +39,7 @@ form button {
         max-width: 500px;
     }
 
-    button:hover {
+    .submit-button:hover {
         text-decoration: none;
         background-color: #3579ac;
         color: #E5E5E5;

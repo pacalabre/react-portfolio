@@ -12,7 +12,7 @@ const Contact = () => {
                 <textarea name="message" placeholder="Message"></textarea>
                 <div>
                     <input type="hidden" name="_next" value="portfolio-form-submit.html" />
-                    <button type="submit">Send</button>
+                    <button className="submit-button" type="submit">Send</button>
                 </div>
             </form>                                 
         </section>
