@@ -16,7 +16,7 @@ img {
 .project-post-content a {
     min-width: 8rem;
     border: none;
-    background-color: #e74c3c;
+    background-color: #3498db;
     color: white;
     text-align: center;
     margin: 0 5px;
@@ -57,7 +57,7 @@ img {
 }
 
 .project-img-and-title-section a {
-    background: red;
+    background: #3498db;
     color: white;
     border-radius: 20px;
     display: block;
@@ -109,7 +109,7 @@ img {
 
 .project-post-content a:hover {
         text-decoration: none;
-        background-color: #7F2A21;
+        background-color: #3498db;
         color: #E5E5E5;
         box-shadow: 5px 5px 10px rgba(0,0,0,.3);
         transition: .3s;

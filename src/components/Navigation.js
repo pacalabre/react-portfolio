@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../css/navigation.css';
 import IndividualProject from './pageComponents/individualProject';
@@ -21,8 +22,8 @@ class Navigation extends React.Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
                         <Link className="link-to" to="/">about</Link>
-                        <Link className="link-to" to="/:projectID">work</Link>
-                        <Link className="link-to" to="/notfound">contact</Link>
+                        <Link className="link-to" to="/#work">work</Link>
+                        <Link className="link-to" to="/#contact">contact</Link>
                         <div className="mobile-social-icons">
                             <a className="social-icons-a" target="_blank" href="https://www.linkedin.com/in/pacalabre/"><span className="icon-social-linkedin nav-ul-social"></span></a>
                             <a className="social-icons-a" target="_blank" href="https://github.com/pacalabre"><span className="icon-social-github nav-ul-social"></span></a>

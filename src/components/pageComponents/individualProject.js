@@ -1,5 +1,6 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../../css/individual-project.css';
 import NotFound from './NotFound';
 
@@ -15,7 +16,7 @@ class IndividualProject extends React.Component {
         return (
             <main>
                 <div className="breadcrumbs">
-                <Link to="/">home</Link> / <Link to="/:projectID">work</Link> / <span>{this.props.location.state.post.title.rendered}</span>
+                <Link to="/">home</Link> / <Link to="/#work">work</Link> / <span>{this.props.location.state.post.title.rendered}</span>
                 </div>
                 <div className="project-post-content">
                 <section className="project-img-and-title-section">

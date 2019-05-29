@@ -9,7 +9,7 @@ class WorkGallery extends React.Component {
 
     render() {
         return (
-            <section className="work-section">
+            <section className="work-section" id="work">
                 <h2 className="work-title">WORK</h2>
                 <div className="work-gallery">
                     {Object.keys(this.props.posts).map(key => 
