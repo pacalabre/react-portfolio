@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
+import xss from 'xss';
 import '../../css/individual-project.css';
 import NotFound from './NotFound';
 
@@ -22,7 +23,7 @@ class IndividualProject extends React.Component {
                 <section className="project-img-and-title-section">
                     <div className="fixed-container">
                         <img className="project-img" src={this.props.location.state.post.jetpack_featured_media_url }/>
-                        <p dangerouslySetInnerHTML={{ __html: this.props.location.state.post.excerpt.rendered }}></p>
+                        <p dangerouslySetInnerHTML={{ __html: xss(this.props.location.state.post.excerpt.rendered)}}></p>
                         <div className="tech-list">
                             <i class="devicon-html5-plain-wordmark colored dev-icon"></i>
                             <i class="devicon-css3-plain-wordmark colored dev-icon"></i>
@@ -37,7 +38,7 @@ class IndividualProject extends React.Component {
                     </div>
                 </section>
                     <section className="project-img-section">
-                        <p dangerouslySetInnerHTML={{ __html: this.props.location.state.post.content.rendered }}></p>
+                        <p dangerouslySetInnerHTML={{ __html: xss(this.props.location.state.post.content.rendered)}}></p>
                     </section>
                 </div>
             </main>
