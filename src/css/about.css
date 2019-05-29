@@ -60,7 +60,7 @@
 
 @media (min-width: 540px) {
     .about-p p, .about-p span {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 }
 
@@ -83,10 +83,6 @@
         padding: 20px;
     }
 
-    .about-p p, .about-p span {
-        font-size: 1.8em;
-    }
-
     .headshot {
         margin-bottom: 0;
         margin-left: 10px;
@@ -106,7 +102,7 @@
 @media (min-width: 992px) {
 
     .about-p {
-        font-size: 22px;
+        font-size: 1.35em;
     }
 
     .about-p-background, .headshot {
@@ -115,13 +111,10 @@
         max-height: 500px;
     }
 
-    .about-p p, .about-p span {
-        font-size: 3em;
-    }
 }
 
 @media (min-width: 1300px) {
-    .about-p p, .about-p span {
-        font-size: 3.65em;
+    .about-p {
+        font-size: 1.5em;
     }
 }
