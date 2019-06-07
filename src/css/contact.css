@@ -42,7 +42,6 @@ form .submit-button {
     .submit-button:hover {
         text-decoration: none;
         background-color: #3579ac;
-        color: #E5E5E5;
         box-shadow: 5px 5px 10px rgba(0,0,0,.3);
         transition: .3s;
     }
