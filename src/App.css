@@ -38,6 +38,10 @@
   animation: App-logo-spin 1.5s linear infinite;
 }
 
+.hide {
+  display: none;
+}
+
 
 @keyframes App-logo-spin {
   from {

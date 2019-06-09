@@ -1,6 +1,8 @@
 .work-section {
     padding: 40px 0;
     text-align: center;
+    position: relative;
+    min-height: 500px;
 }
 
 .work-gallery {

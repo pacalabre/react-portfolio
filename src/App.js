@@ -14,7 +14,8 @@ import { ResponsiveEmbed } from 'react-bootstrap';
 class App extends Component {
   state = {
     posts:{},
-    about:{}
+    about:{},
+    isLoadingData: true
   }
 
   getPosts = post => {
@@ -36,7 +37,8 @@ class App extends Component {
         } 
         
         self.setState({
-          posts: response.data
+          posts: response.data,
+          isLoadingData: false
         })
       }
     })
@@ -56,7 +58,7 @@ class App extends Component {
         <Switch>
           <Route path="/about" render = {()=>  <Bio  about={this.state.about} /> } />
           <Route path="/:project" component={withRouter(IndividualProject)} />
-          <Route path="/" render = {()=>  <Home posts={ this.state.posts } about={this.state.about} /> } />
+          <Route path="/" render = {()=>  <Home posts={ this.state.posts } about={this.state.about} isLoadingPosts={this.state.isLoadingData} /> } />
           <Route component = { NotFound } />
         </Switch>
         <FooterComponent />

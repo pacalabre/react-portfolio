@@ -11,7 +11,7 @@ class Home extends React.Component {
         return (
             <div>
                 <About />
-                <WorkGallery posts={this.props.posts} />
+                <WorkGallery posts={this.props.posts} isLoadingPosts={this.props.isLoadingPosts} />
                 <TechnologyList />
                 <Contact />
             </div>

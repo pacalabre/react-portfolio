@@ -9,10 +9,14 @@ import placeholder from '../assets/placeholder.jpg';
 class WorkGallery extends React.Component {
 
     render() {
+        if(this.props.posts === 0) {
+            return 
+        }
         return (
             <section className="work-section" id="work">
                 <h2 className="work-title">WORK</h2>
                 <div className="work-gallery">
+                    <div className={`${this.props.isLoadingPosts ? 'loader-circle' : 'hide'} `}></div>
                     {Object.keys(this.props.posts).map(key => 
                         <div className="work-gallery-div" key={key}>
                             <Link to={{
