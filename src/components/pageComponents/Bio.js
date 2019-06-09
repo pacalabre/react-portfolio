@@ -1,13 +1,17 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
 import xss from 'xss';
 
 class About extends React.Component {
     render() {
+        if(!this.props.about.content) {
+            return (
+                <div className="loader-circle"></div>
+            )
+        }
         return (
             <div>
-               <div dangerouslySetInnerHTML={{ __html: xss(this.props.about.content.rendered)}}></div>
+                <div dangerouslySetInnerHTML={{ __html: xss(this.props.about.content.rendered)}}></div>
             </div>
         )
     }

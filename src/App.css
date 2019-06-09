@@ -23,6 +23,22 @@
   color: #61dafb;
 }
 
+.loader-circle {
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  border-top:5px solid #3498db;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-animation: App-logo-spin 2s linear infinite; /* Safari */
+  animation: App-logo-spin 1.5s linear infinite;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
