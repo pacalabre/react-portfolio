@@ -23,7 +23,7 @@ class Navigation extends React.Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
-                        <Link className="link-to" to="/">about</Link>
+                        <Link className="link-to" to="/about">about</Link>
                         <Link className="link-to" to="/#work">work</Link>
                         <Link className="link-to" to="/#contact">contact</Link>
                         <div className="mobile-social-icons">

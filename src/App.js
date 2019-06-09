@@ -4,14 +4,17 @@ import './App.css';
 import Navigation from './components/Navigation';
 import FooterComponent from './components/FooterComponent';
 import Home from './components/pageComponents/Home';
+import  Bio from './components/pageComponents/Bio';
 import IndividualProject from './components/pageComponents/individualProject';
 import NotFound from './components/pageComponents/NotFound';
 import axios from 'axios';
+import { ResponsiveEmbed } from 'react-bootstrap';
 
 
 class App extends Component {
   state = {
-    posts:{}
+    posts:{},
+    about:{}
   }
 
   getPosts = post => {
@@ -22,9 +25,20 @@ class App extends Component {
       }
     })
     .then(function(response) {
-      self.setState({
-        posts: response.data
-      })
+      // Filter out the About page post from
+      for (post in response.data) {
+        const aboutPost = response.data[post]['_embedded']['wp:term'][1][0].name.toLowerCase() === "about";
+        if( aboutPost ) { 
+          self.setState({
+            about: response.data[post] 
+          })
+          response.data.splice(response.data.indexOf(response.data[post]), 1);
+        } 
+        
+        self.setState({
+          posts: response.data
+        })
+      }
     })
     .catch(function(err) {
       console.log(err);
@@ -38,10 +52,11 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navigation />
+        <Navigation  />
         <Switch>
-          <Route path="/:project" component={withRouter(IndividualProject)} /> 
-          <Route path="/" render = {()=>  <Home posts={ this.state.posts } /> } />
+          <Route path="/about" render = {()=>  <Bio  about={this.state.about} /> } />
+          <Route path="/:project" component={withRouter(IndividualProject)} />
+          <Route path="/" render = {()=>  <Home posts={ this.state.posts } about={this.state.about} /> } />
           <Route component = { NotFound } />
         </Switch>
         <FooterComponent />

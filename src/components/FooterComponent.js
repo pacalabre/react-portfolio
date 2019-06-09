@@ -6,7 +6,6 @@ class FooterComponent extends React.Component {
 
     render() {
         let date = new Date;
-        console.log(date.getFullYear());
         return (
             <footer>
                 PaulCalabrese.me &copy; {date.getFullYear()}
