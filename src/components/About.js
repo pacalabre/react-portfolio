@@ -10,11 +10,11 @@ class About extends React.Component {
             <section className="about-container">
                 <div className="about">
                     <div className="about-p-background">
-                        <p className="about-p">
+                        <div className="about-p">
                             <p>Design</p>
                             <p>Driven</p>
                             <span>Development</span>
-                        </p>
+                        </div>
                         <video muted autoPlay loop className="about-video">
                             <source src={ aboutVid } type="video/mp4" />
                             <source src={ aboutVid } type="video/ogg" />

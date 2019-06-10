@@ -10,11 +10,11 @@ class Navigation extends React.Component {
 
     getNavbarToggleIcon() {
         return (
-            <React.Fragment>
+            <div className="toggle-icon-wrapper">
                 <span className="toggle-icon-line toggle-line-top"></span>
                 <span className="toggle-icon-line toggle-line-middle"></span>
                 <span className="toggle-icon-line toggle-line-bottom"></span>
-            </React.Fragment>
+            </div>
         )
     }
     
@@ -34,8 +34,8 @@ class Navigation extends React.Component {
                         <Link className="link-to" to="/#work">work</Link>
                         <Link className="link-to" to="/#contact">contact</Link>
                         <div className="mobile-social-icons">
-                            <a className="social-icons-a" target="_blank" href="https://www.linkedin.com/in/pacalabre/"><span className="icon-social-linkedin nav-ul-social"></span></a>
-                            <a className="social-icons-a" target="_blank" href="https://github.com/pacalabre"><span className="icon-social-github nav-ul-social"></span></a>
+                            <a className="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pacalabre/"><span className="icon-social-linkedin nav-ul-social"></span></a>
+                            <a className="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://github.com/pacalabre"><span className="icon-social-github nav-ul-social"></span></a>
                         </div>
                         </Nav>
                     </Navbar.Collapse>
@@ -43,8 +43,8 @@ class Navigation extends React.Component {
                 <div className="nav-bottom-div">
                     <p className="navigation-p">Front End Dev | Seattle, WA</p>
                     <div className="desktop-social-icons">
-                        <a className="social-icons-a" target="_blank" href="https://www.linkedin.com/in/pacalabre/"><span className="icon-social-linkedin nav-ul-social"></span></a>
-                        <a className="social-icons-a" target="_blank" href="https://github.com/pacalabre"><span className="icon-social-github nav-ul-social"></span></a>
+                        <a className="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pacalabre/"><span className="icon-social-linkedin nav-ul-social"></span></a>
+                        <a className="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://github.com/pacalabre"><span className="icon-social-github nav-ul-social"></span></a>
                     </div>
                 </div>
             </Navbar>
