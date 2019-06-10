@@ -17,6 +17,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 5% 55%;
+    min-height: 400px;
 }
 
 .about-video {

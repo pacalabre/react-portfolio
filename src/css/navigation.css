@@ -32,9 +32,10 @@ a {
 .navbar-toggler {
     position: absolute;
     right: 0;
-    top: 43px;
-    right: 25PX;
+    top: 38px;
+    right: 15PX;
     border: none;
+    height: 44px;
 }
 
 .navbar-toggler-icon {
@@ -42,6 +43,35 @@ a {
     opacity: 1;
     color: rgba(0, 0, 0, 1);
     border-color: rgba(0, 0, 0, 1);
+}
+
+.toggle-icon-wrapper {
+    position: relative;
+}
+
+.toggle-icon-line {
+    height: 5px;
+    width: 35px;
+    background: #2c3e50;;
+    display: block;
+    margin: 5px;
+    transition:.2s;
+}
+
+.collapsed .toggle-line-top {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 15px;
+}
+
+.collapsed .toggle-line-middle {
+    transform: rotate(45deg);
+}
+
+.collapsed .toggle-line-bottom {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 15px;
 }
 
 .navigation-text {
@@ -110,8 +140,8 @@ a {
     }
 
     .navbar-toggler {
-        top: 54px;
-        right: 40px;
+        top: 50px;
+        right: 30px;
     }
 
     .mobile-social-icons {

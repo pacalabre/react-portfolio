@@ -7,20 +7,27 @@ import IndividualProject from './pageComponents/individualProject';
 import NotFound from './pageComponents/NotFound';
 
 class Navigation extends React.Component {
+
+    getNavbarToggleIcon() {
+        return (
+            <React.Fragment>
+                <span className="toggle-icon-line toggle-line-top"></span>
+                <span className="toggle-icon-line toggle-line-middle"></span>
+                <span className="toggle-icon-line toggle-line-bottom"></span>
+            </React.Fragment>
+        )
+    }
     
     render() {
         return (
             <Navbar className="navigation" expand="lg">
                 <div className="navigation-text">
-                   
                     <Link className="nav-link-home"  to="/">
                         <h1 className="navigation-h1">
                             <span className="navigation-h1-span">P</span>AUL <span className="navigation-h1-span">C</span>ALABRESE
                         </h1>
                     </Link>
-                        
-                   
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle children={this.getNavbarToggleIcon()}  aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
                         <Link className="link-to" to="/about">about</Link>
