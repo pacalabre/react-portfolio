@@ -5,9 +5,9 @@ path {
     background: blue;
     background:#2c3e50;
     background:linear-gradient(
-         rgba(0, 0, 0, 0.3),
-         rgba(0, 0, 0, 0.3) ),
-          url('../assets/mural-blur.jpg');
+         rgba(0, 0, 0, 0.45),
+         rgba(0, 0, 0, 0.45) ),
+          url('../assets/mural.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
