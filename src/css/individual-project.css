@@ -50,6 +50,11 @@ img {
     margin: 5px 0;
 }
 
+.project-img-section img {
+    min-height: 200px;
+    min-width: 350px;
+}
+
 .project-img-section p {
     display: inline-block;
     margin: auto;
