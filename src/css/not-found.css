@@ -1,0 +1,23 @@
+.four-oh-four-err {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.four-oh-four-text {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+.iframe-404 {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .four-oh-four-err {
+        margin-top: 60px;
+    }
+}
