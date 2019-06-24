@@ -22,11 +22,11 @@ class IndividualProject extends React.Component {
                 <div className="project-post-content">
                 <section className="project-img-and-title-section">
                     <div className="fixed-container">
-                        <img className="project-img" src={this.props.location.state.post.jetpack_featured_media_url }/>
+                        <img alt="company logo" className="project-img" src={this.props.location.state.post.jetpack_featured_media_url }/>
                         <p dangerouslySetInnerHTML={{ __html: xss(this.props.location.state.post.excerpt.rendered)}}></p>
                         <div className="tech-list">
-                            <i class="devicon-html5-plain-wordmark colored dev-icon"></i>
-                            <i class="devicon-css3-plain-wordmark colored dev-icon"></i>
+                            <i className="devicon-html5-plain-wordmark colored dev-icon"></i>
+                            <i className="devicon-css3-plain-wordmark colored dev-icon"></i>
                             {
                                 this.props.location.state.post['_embedded']['wp:term'][0].map(tagName =>
                                     <i key={tagName.id} 

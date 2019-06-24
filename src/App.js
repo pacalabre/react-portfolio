@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
+import { Route, Switch, withRouter} from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import FooterComponent from './components/FooterComponent';
@@ -8,7 +8,6 @@ import  Bio from './components/pageComponents/Bio';
 import IndividualProject from './components/pageComponents/individualProject';
 import NotFound from './components/pageComponents/NotFound';
 import axios from 'axios';
-import { ResponsiveEmbed } from 'react-bootstrap';
 
 
 class App extends Component {

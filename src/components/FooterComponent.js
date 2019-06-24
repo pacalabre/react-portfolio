@@ -2,16 +2,13 @@ import React from 'react';
 import '../css/footer-component.css';
 
 
-class FooterComponent extends React.Component {
-
-    render() {
-        let date = new Date;
+const FooterComponent = () => {
+        let date = (new Date()).getFullYear();
         return (
             <footer>
-                PaulCalabrese.me &copy; {date.getFullYear()}
+                PaulCalabrese.me &copy; {date}
             </footer>
         )
-    }
 }
 
 export default FooterComponent;
