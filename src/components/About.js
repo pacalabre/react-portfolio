@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/about.css';
-import headshot from  '../assets/placeholder.jpg';
+import headshot from  '../assets/selfheadshot.jpg';
 import aboutVid from '../assets/about.mp4';
 import Headshot from './Headshot';
 

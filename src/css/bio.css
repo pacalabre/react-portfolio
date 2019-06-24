@@ -1,0 +1,35 @@
+.bio-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bio-image-div img {
+    margin-top: 140px;
+    margin-bottom: 0;
+    width: 100%;
+} 
+
+.bio-post-content {
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+
+    .bio-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bio-image-div img {
+        width: 95%;
+        margin-top: 40px;
+        margin-right: 10px;
+        margin-bottom: 80px;
+    } 
+
+    .bio-post-content {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+}
