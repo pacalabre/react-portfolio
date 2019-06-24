@@ -53,6 +53,7 @@ img {
 .project-img-section img {
     min-height: 200px;
     min-width: 350px;
+    padding: 0 20px;
 }
 
 .project-img-section p {
@@ -108,11 +109,15 @@ img {
         width: 60%;
     }
 
+    .project-img-section img {
+        padding: 0;
+    }
+
     .project-img {
         width: 70%;
     }
 
-.project-post-content a:hover {
+    .project-post-content a:hover {
         text-decoration: none;
         background-color: #3579ac;
         box-shadow: 5px 5px 10px rgba(0,0,0,.3);
