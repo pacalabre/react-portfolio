@@ -3,7 +3,12 @@ path {
 }
 .technology-list-section {
     background: blue;
-    background: url('../assets/placeholer3.jpg');
+    background:linear-gradient(
+         rgba(0, 0, 0, 0.3),
+         rgba(0, 0, 0, 0.3) ),
+          url('../assets/mural-blur.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     background-position: bottom right;
 }
