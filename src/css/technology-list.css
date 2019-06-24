@@ -3,6 +3,7 @@ path {
 }
 .technology-list-section {
     background: blue;
+    background:#2c3e50;
     background:linear-gradient(
          rgba(0, 0, 0, 0.3),
          rgba(0, 0, 0, 0.3) ),
