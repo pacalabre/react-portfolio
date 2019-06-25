@@ -7,11 +7,11 @@ path {
     background:linear-gradient(
          rgba(0, 0, 0, 0.45),
          rgba(0, 0, 0, 0.45) ),
-          url('../assets/mural.jpg');
+          url('../assets/mtns-lake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    background-position: bottom right;
+    background-position: center;
 }
 
 .tech-list-ul {
@@ -31,6 +31,7 @@ path {
 
 
 @media (min-width: 768px) {
+
     .tech-list-ul {
         grid-template-columns: auto auto auto auto auto;       
     }
@@ -38,5 +39,5 @@ path {
     .tech-svg {
         min-width: 150px;
         padding: 20px;
-    }
+    }    
 }
