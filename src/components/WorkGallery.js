@@ -20,7 +20,7 @@ class WorkGallery extends React.Component {
                     {Object.keys(this.props.posts).map(key => 
                         <div className="work-gallery-div" key={key}>
                             <Link to={{
-                                pathname: this.props.posts[key].slug ,
+                                pathname: `/work/`+this.props.posts[key].slug ,
                                 state: {
                                     post: this.props.posts[key]
                                 }

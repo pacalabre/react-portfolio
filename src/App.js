@@ -55,8 +55,8 @@ class App extends Component {
       <React.Fragment>
         <Navigation  />
         <Switch>
+          <Route path="/work/:project" component={withRouter(IndividualProject)} />
           <Route path="/about" render = {()=>  <Bio  about={this.state.about} /> } />
-          <Route path="/:project" component={withRouter(IndividualProject)} />
           <Route path="/" render = {()=>  <Home posts={ this.state.posts } about={this.state.about} isLoadingPosts={this.state.isLoadingData} /> } />
           <Route component = { NotFound } />
         </Switch>
