@@ -4,6 +4,10 @@ import Contact from '../Contact';
 import '../../css/bio.css';
 
 class About extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         if(!this.props.about.content) {
             return (

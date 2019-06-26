@@ -5,6 +5,10 @@ import WorkGallery from '../WorkGallery';
 import Contact from '../Contact';
 
 class Home extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div>

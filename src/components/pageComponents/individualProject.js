@@ -7,6 +7,9 @@ import NotFound from './NotFound';
 
 
 class IndividualProject extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
 
     render() {
         if(!this.props.location.state) {
