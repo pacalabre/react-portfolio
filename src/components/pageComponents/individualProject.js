@@ -13,9 +13,8 @@ class IndividualProject extends React.Component {
 
     render() {
         if(!this.props.location.state) {
-            return <Route component={ NotFound }/>
+            return <div className="loader-circle"></div>
         }
-
 
         return (
             <main>

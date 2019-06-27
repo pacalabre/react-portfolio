@@ -14,7 +14,7 @@ class About extends React.Component {
                             <p>Driven</p>
                             <span>Development</span>
                         </div>
-                        <video muted autoPlay loop playsinline className="about-video">
+                        <video muted autoPlay loop playsInline className="about-video">
                             <source src={ aboutVid } type="video/mp4" />
                             <source src={ aboutVid } type="video/ogg" />
                             Your browser does not support the video tag.

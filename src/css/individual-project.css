@@ -94,12 +94,6 @@ img {
         justify-content: left;
     }
 
-    .fixed-container {
-        width: 40%;
-        max-width: 500px;
-        position: fixed;
-    }
-
     .project-img {
         margin-top: 0;
         margin-left: 0;
@@ -122,5 +116,13 @@ img {
         background-color: #3579ac;
         box-shadow: 5px 5px 10px rgba(0,0,0,.3);
         transition: .3s;
+    }
+}
+
+@media (min-width: 900px) {
+    .fixed-container {
+        width: 40%;
+        max-width: 500px;
+        position: fixed;
     }
 }
