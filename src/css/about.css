@@ -1,7 +1,7 @@
 .about-container {
     display: flex;
     margin: 142px 0 20px 0;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .about {
@@ -21,7 +21,9 @@
 }
 
 .about-video {
-    display: none;
+    right: 0;
+    top: -60px;
+    position: absolute;
 }
 
 .about-p-background {
@@ -55,7 +57,7 @@
     background: url('../assets/headshot.jpg');
     background-size: cover;
     background-position: center center;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 @media (min-width: 540px) {
@@ -84,7 +86,7 @@
     }
 
     .headshot {
-        margin-bottom: 0;
+        margin-top: 0;
         margin-left: 10px;
     }
 
