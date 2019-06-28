@@ -5,9 +5,9 @@ path {
     background: blue;
     background:#2c3e50;
     background:linear-gradient(
-         rgba(0, 0, 0, 0.45),
-         rgba(0, 0, 0, 0.45) ),
-          url('../assets/mtns-lake.jpg');
+         rgba(0, 0, 0, 0.25),
+         rgba(0, 0, 0, 0.25) ),
+          url('../assets/mural.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
