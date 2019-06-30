@@ -10,27 +10,34 @@ import NotFound from './NotFound';
 class IndividualProject extends React.Component {
 
     state = {
-        currentPost: {}
+        currentPost: {},
+        notFound: false
     }
 
     lookForCurrentPost() {
         if(Object.entries(this.state.currentPost).length === 0) {
+            let notFoundCount = 0;
             for(let post in this.props.posts) {
-                console.log(this.props.posts[post]);
                 if(this.props.posts[post].slug === this.props.match.params.project) {
-                    this.setState( {
+                    this.setState({
                         currentPost: this.props.posts[post]
                     })
+                } else {
+                    notFoundCount++;
                 }
             }
-        }
+            if(this.state.notFound === false && notFoundCount > 0 && notFoundCount === this.props.posts.length) {
+                this.setState({
+                    notFound: true
+                })
+            }   
+        }   
     }
 
     componentDidMount() {
         window.scrollTo(0, 0);
         this.lookForCurrentPost();
-       
-    }
+    }       
 
     componentDidUpdate() {
         this.lookForCurrentPost();
@@ -40,10 +47,14 @@ class IndividualProject extends React.Component {
         this.setState({
             currentPost: {}
         })
-        console.log(Object.entries(this.state.currentPost).length);
     }
 
     render() {
+
+        if(this.state.notFound === true) {
+            return <NotFound />
+        }
+
         if(!this.state.currentPost.slug) {
             return <div className="loader-circle"></div>
         }
