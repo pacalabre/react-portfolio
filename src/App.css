@@ -34,8 +34,8 @@
   top: 50%;
   left: 0;
   right: 0;
-  -webkit-animation: App-logo-spin 2s linear infinite; /* Safari */
-  animation: App-logo-spin 1.5s linear infinite;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 1.5s linear infinite;
 }
 
 .hide {
@@ -43,7 +43,7 @@
 }
 
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
