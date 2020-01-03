@@ -66,7 +66,7 @@ class IndividualProject extends React.Component {
                 </div>
                 <div className="project-post-content">
                 <section className="project-img-and-title-section">
-                    <div className="fixed-container">
+                    <div>
                         <img alt="company logo" className="project-img" src={this.state.currentPost.jetpack_featured_media_url }/>
                         <p dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.excerpt.rendered)}}></p>
                         <div className="tech-list">
