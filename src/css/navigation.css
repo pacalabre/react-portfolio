@@ -71,6 +71,20 @@ a {
     transition:.2s;
 }
 
+.collapsed .toggle-icon-line {
+    background: white;
+}
+
+button.navbar-toggler.collapsed {
+    position: fixed;
+    z-index: 30000;
+}
+
+.collapsed .toggle-icon-line {
+    color: white;
+    z-index: 3000;
+}
+
 .collapsed .toggle-line-top {
     transform: rotate(45deg);
     position: absolute;
@@ -137,7 +151,7 @@ a {
 }
 
 .social-icons-a {
-    padding: 0 10px;
+    padding: 20px;
 }
 
 .desktop-social-icons {
@@ -153,6 +167,22 @@ a {
     background: white;
 }
 
+.show .navbar-nav {
+    background: #585858;
+    color: white;
+    border: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 100px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+}
+
 @media (min-width: 768px) {
 
     .navbar-nav {
@@ -165,10 +195,6 @@ a {
 
     .mobile-social-icons {
         justify-content: center
-    }
-
-    .link-to:hover, a:hover .nav-ul-social {
-        color: #3498db;
     }
 
     .navigation-h1 {
@@ -251,5 +277,6 @@ a {
 
     .social-icons-a {
         font-size: 25px;
+        padding-left: 20px;
     }
 }

@@ -1,19 +1,32 @@
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
 
 .navbar-collapse {
     position: absolute;
     left: -400px;
 } 
 
-.home-nav-link-container {
+.home-navigation .navbar-toggler {
+    top:12px;
+    right: 14px;
+}
+
+/* .home-navigation button.navbar-toggler.collapsed {
+    position: fixed;
+} */
+
+.home-navbar-link-container {
+    justify-content: center;
     display: flex;
-    text-align: right;
     flex-direction: column;
+    text-align: center;
 }
 
 .home-nav-link-to {
     padding: 7px;
     font-weight: 600;
-    color: #fff;
+    font-size: 35px;
 }
 
 .home-navigation {
@@ -53,8 +66,9 @@
 .home-nav-social-icons {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 35px;
 }
 
 .social-icons-a {
@@ -66,30 +80,12 @@
     transition-duration: .2s;
 } 
 
-.show .navbar-nav {
-    background: #585858;
-    color: white;
-    border: none;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    padding-top: 100px;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 10000;
-}
-
 @media (min-width: 540px) {
 
     .home-nav-link-container {
         text-align: center;
     }
 
-    .home-nav-social-icons {
-        width: 80%;
-    }
 }
 
 @media (min-width: 768px) {
@@ -115,10 +111,6 @@
         width: 100%;
     }
 
-    .home-nav-link-to:hover, a:hover .nav-ul-social {
-        color: #3498db;
-    }
-
     .home-nav-link-home:hover {
         color: initial;
     }
@@ -126,6 +118,14 @@
 }
 
 @media (min-width: 992px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #585858;
+    }
+
+    .home-navbar-link-container {
+        flex-direction: row;
+    }
 
     .home-navigation {
         margin: 40px auto;
@@ -162,8 +162,13 @@
         flex-direction: row;
     }
 
+    .home-navigation .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 1rem;
+    } 
+
     .home-nav-link-to {
-        padding: 0 0px 5px 10px;
+        padding: 0 .5rem .5rem .5rem;
         font-size: 25px; 
         color: #585858;
     }
