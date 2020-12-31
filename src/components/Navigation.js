@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Navbar, Nav } from 'react-bootstrap';
+import secondaryLogo from '../assets/secondary-logo.png';
 import '../css/navigation.css';
 
 
@@ -22,12 +23,12 @@ class Navigation extends React.Component {
                 <div className="navigation-text">
                     <Link className="nav-link-home"  to="/">
                         <h1 className="navigation-h1">
-                            <span className="navigation-h1-span">P</span>AUL <span className="navigation-h1-span">C</span>ALABRESE
+                            <img className="logo" alt="logo" src={secondaryLogo} />
                         </h1>
                     </Link>
                     <Navbar.Toggle children={this.getNavbarToggleIcon()}  aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav>
+                        <Nav className="global-nav">
                         <Link className="link-to" to="/about">about</Link>
                         <Link className="link-to" to="/#work">work</Link>
                         <Link className="link-to" to="/#contact">contact</Link>
@@ -37,13 +38,6 @@ class Navigation extends React.Component {
                         </div>
                         </Nav>
                     </Navbar.Collapse>
-                </div>
-                <div className="nav-bottom-div">
-                    <p className="navigation-p">Front End Dev | Seattle, WA</p>
-                    <div className="desktop-social-icons">
-                        <a className="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pacalabre/"><span className="icon-social-linkedin nav-ul-social"></span></a>
-                        <a className="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://github.com/pacalabre"><span className="icon-social-github nav-ul-social"></span></a>
-                    </div>
                 </div>
             </Navbar>
         )

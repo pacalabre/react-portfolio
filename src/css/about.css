@@ -1,23 +1,10 @@
-.about-container {
+.hero-container {
     display: flex;
-    margin: 142px 0 20px 0;
-    flex-direction: column;
-}
-
-.about {
-    color: white;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+    max-width: 1000px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 40% 55%;
-    min-height: 400px;
-    background-image: linear-gradient( to right, #EDF4FF, #adcdff);
 }
 
 .mtns-lake-img {
@@ -36,61 +23,31 @@
     width: 75%;
 }
 
-.about-video {
-    right: 0;
-    top: -60px;
-    position: absolute;
-}
-
-.about-p-background {
-    z-index: 2000;
-    height: auto;
-    width: 100%;
-    display: flex;
-}
-
-.about-p{
-    color: white;
-    padding: 60px 20px;
-    margin: auto;
-    z-index: 200;
-    text-shadow: 0.5px 0.5px 50px black;
-}
-
-.about-p p, .about-p span {
-    margin-bottom: 0;
-    line-height: 1;
-    font-size: 2.5em;
-    text-transform: uppercase;
-}
-
-.headshot {
-    height: 400px;
-    background: url('../assets/ga-headshot-black-white.jpg');
+.headshot, .seattle {
+    height: 450px;
+    background: url('../assets/timelapse-headshot.png');
     background-size: cover;
     background-position: center center;
-    margin-top: 20px;
+    width: 100%;
 }
 
-@media (min-width: 540px) {
-    .about-p p, .about-p span {
-        font-size: 3em;
-    }
+.seattle {
+    background: url('../assets/sea1.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
 
-    .about-container {
+    .hero-container {
         flex-direction: row;
         margin-top: 0;
     }
 
-    .about, .headshot {
+    .headshot, .seattle{
         width: 50%;
-    }
-
-    .about-p {
-        padding: 20px;
+        height: 350px;
     }
 
     .headshot {
@@ -109,21 +66,8 @@
 }
 
 @media (min-width: 992px) {
-
-    .about-p {
-        font-size: 1.35em;
+    .hero-container {
+        margin: auto;
     }
 
-    .about-p-background, .headshot {
-        height: 80vh;
-        min-height: 400px;
-        max-height: 500px;
-    }
-
-}
-
-@media (min-width: 1300px) {
-    .about-p {
-        font-size: 1.5em;
-    }
 }

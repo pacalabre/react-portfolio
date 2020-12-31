@@ -1,0 +1,94 @@
+.kaleidoscope-mountain-container {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent, white);
+    padding: 100px 0;
+}
+
+.kaleidoscope-mountain {
+    color: white;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 55%;
+    min-height: 490px;
+    width: 100%;
+}
+
+.mtns-lake-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    animation: spin 200s linear infinite;
+}
+
+.mnt-lake-img-inside {
+    animation: spin-right 100s linear infinite;
+    width: 75%;
+}
+
+.kaleidoscope-mountain-p-background {
+    z-index: 2000;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.kaleidoscope-mountain-p{
+    color: white;
+    padding: 60px 20px;
+    margin: auto;
+    z-index: 200;
+    text-shadow: 0.5px 0.5px 50px black;
+}
+
+.kaleidoscope-mountain-p p, .kaleidoscope-mountain-p span {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 540px) {
+    .kaleidoscope-mountain-p p, .kaleidoscope-mountain-p span {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .kaleidoscope-mountain-container {
+        align-items: center;
+    }
+
+    .kaleidoscope-mountain-p {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .kaleidoscope-mountain {
+        width: 80%;
+        min-height: 490px;
+        max-width: 640px;
+    }
+
+    .kaleidoscope-mountain-p {
+        padding: 20px;
+    }
+
+    .kaleidoscope-mountain-p p, .kaleidoscope-mountain-p span {
+        font-size: 3em;
+    }
+}
+
+

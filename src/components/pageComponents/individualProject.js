@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Navigation from '../Navigation';
 import { Route } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import xss from 'xss';
@@ -56,37 +57,43 @@ class IndividualProject extends React.Component {
         }
 
         if(!this.state.currentPost.slug) {
-            return <div className="loader-circle"></div>
+            return (
+                <div className="loading-container">
+                    <div className="loader-circle"></div>
+                </div>)
         }
 
         return (
-            <main>
-                <div className="breadcrumbs">
-                <Link to="/">home</Link> / <Link to="/#work">work</Link> / <span>{this.state.currentPost.title.rendered}</span>
-                </div>
-                <div className="project-post-content">
-                <section className="project-img-and-title-section">
-                    <div>
-                        <img alt="company logo" className="project-img" src={this.state.currentPost.jetpack_featured_media_url }/>
-                        <p dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.excerpt.rendered)}}></p>
-                        <div className="tech-list">
-                            <i className="devicon-html5-plain-wordmark colored dev-icon"></i>
-                            <i className="devicon-css3-plain-wordmark colored dev-icon"></i>
-                            {
-                                this.state.currentPost['_embedded']['wp:term'][0].map(tagName =>
-                                    <i key={tagName.id} 
-                                        className={"devicon-"+`${tagName.name === `angularjs` || tagName.name === `javascript` ?  tagName.name+"-plain" : tagName.name+"-plain-wordmark"}`+" dev-icon colored"}>
-                                    </i>
-                                )
-                            }
-                        </div>
+            <div className="individual-project">
+                <Navigation  />
+                <main className="individual-project-main">
+                    <div className="breadcrumbs">
+                    <Link to="/">home</Link> / <Link to="/#work">work</Link> / <span>{this.state.currentPost.title.rendered}</span>
                     </div>
-                </section>
-                    <section className="project-img-section">
-                        <p dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.content.rendered)}}></p>
+                    <div className="project-post-content">
+                    <section className="project-img-and-title-section">
+                        <div>
+                            <img alt="company logo" className="project-img" src={this.state.currentPost.jetpack_featured_media_url }/>
+                            <p dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.excerpt.rendered)}}></p>
+                            <div className="tech-list">
+                                <i className="devicon-html5-plain-wordmark colored dev-icon"></i>
+                                <i className="devicon-css3-plain-wordmark colored dev-icon"></i>
+                                {
+                                    this.state.currentPost['_embedded']['wp:term'][0].map(tagName =>
+                                        <i key={tagName.id} 
+                                            className={"devicon-"+`${tagName.name === `angularjs` || tagName.name === `javascript` ?  tagName.name+"-plain" : tagName.name+"-plain-wordmark"}`+" dev-icon colored"}>
+                                        </i>
+                                    )
+                                }
+                            </div>
+                        </div>
                     </section>
-                </div>
-            </main>
+                        <section className="project-img-section">
+                            <p dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.content.rendered)}}></p>
+                        </section>
+                    </div>
+                </main>
+            </div>
         )
     }
 }

@@ -31,11 +31,20 @@
   height: 40px;
   margin: auto;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 0;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 1.5s linear infinite;
+}
+
+.white-backdrop {
+  background: white;
+}
+
+.loading-container {
+  background: white;
+  height: 80vh;
 }
 
 .hide {

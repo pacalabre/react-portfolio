@@ -53,7 +53,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navigation  />
         <Switch>
           <Route path="/work/:project" render = {(props)=>  <IndividualProject posts={this.state.posts} {...props}  /> } />
           <Route path="/about" render = {()=>  <Bio  about={this.state.about} /> } />

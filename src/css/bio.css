@@ -1,10 +1,16 @@
+.bio-container {
+    background: white;
+}
+
 .bio-section {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .bio-image-div img {
-    margin-top: 140px;
+    margin-top: 0;
     margin-bottom: 0;
     width: 100%;
 } 
@@ -18,6 +24,7 @@
 
     .bio-section {
         grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
     }
 
     .bio-image-div img {

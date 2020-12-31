@@ -20,6 +20,8 @@ path {
     grid-template-columns: auto auto;
     list-style: none;
     padding:  40px 0;
+    max-width: 1200px;
+    margin: auto;  
 }
 
 .tech-svg {
@@ -33,7 +35,7 @@ path {
 @media (min-width: 768px) {
 
     .tech-list-ul {
-        grid-template-columns: auto auto auto auto auto;       
+        grid-template-columns: auto auto auto auto auto;     
     }
 
     .tech-svg {

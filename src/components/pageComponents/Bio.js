@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from '../Navigation';
 import xss from 'xss';
 import Contact from '../Contact';
 import '../../css/bio.css';
@@ -15,7 +16,8 @@ class About extends React.Component {
             )
         }
         return (
-            <React.Fragment>
+            <div className="bio-container">
+                <Navigation />
                 <section className="bio-section">
                     <div className="bio-image-div">
                         <img alt="Headshot of Paul" src={this.props.about.jetpack_featured_media_url}></img>
@@ -23,7 +25,7 @@ class About extends React.Component {
                     <div className="bio-post-content" dangerouslySetInnerHTML={{ __html: xss(this.props.about.content.rendered)}}></div>
                 </section>
                 <Contact />
-            </React.Fragment>
+            </div>
         )
     }
 }

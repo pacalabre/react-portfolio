@@ -1,3 +1,11 @@
+.individual-project {
+    background: white;
+}
+
+.individual-project-main {
+    max-width: 1200px;
+    margin: 60px auto auto auto;
+}
 
 img {
     width: 100%;
@@ -8,9 +16,9 @@ img {
 }
 
 .breadcrumbs {
-    margin: 160px 0 0 20px;
     text-transform: uppercase;
     display: block;
+    padding-left: 40px;
 }
 
 .project-post-content a {
@@ -71,6 +79,10 @@ img {
 
 @media (min-width:768px) {
 
+        .individual-project-main {
+        margin-top: 60px;
+    }
+
     img {
         width: 70%;
         margin: 40px auto;
@@ -101,6 +113,7 @@ img {
 
     .project-img-section {
         width: 60%;
+        margin-bottom: 80px;
     }
 
     .project-img-section img {
@@ -120,6 +133,7 @@ img {
 }
 
 @media (min-width: 900px) {
+
     .fixed-container {
         width: 40%;
         max-width: 500px;

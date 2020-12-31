@@ -1,8 +1,10 @@
 import React from 'react';
+import HomeNavigation from '../HomeNavigation';
 import About from '../About';
 import TechnologyList from '../TechnologyList';
 import WorkGallery from '../WorkGallery';
 import Contact from '../Contact';
+import KaleidoscropeMountain from '../KaleidoscopeMountain';
 
 class Home extends React.Component {
     componentDidMount() {
@@ -12,10 +14,14 @@ class Home extends React.Component {
     render() {
         return (
             <div>
+                <HomeNavigation  />
                 <About />
-                <WorkGallery posts={this.props.posts} isLoadingPosts={this.props.isLoadingPosts} />
-                <TechnologyList />
-                <Contact />
+                <KaleidoscropeMountain />
+                <div className="white-backdrop">
+                    <WorkGallery posts={this.props.posts} isLoadingPosts={this.props.isLoadingPosts} />
+                    <TechnologyList />
+                    <Contact />
+                </div>
             </div>
         )
     }

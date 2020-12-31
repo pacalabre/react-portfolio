@@ -15,30 +15,41 @@ a {
 .link-to {
     padding: 7px;
     font-weight: 600;
+    color: white;
 }
 
 .navigation {
     display: block;
-    padding: 20px;
     background: white;
     transition: .2s;
     position: fixed;
+    padding: 0;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100000;
     box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    position: sticky;
+}
+
+.navigation-text {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
 }
 
 .navigation-h1 {
     margin-top: 10px;
 }
 
+.logo {
+    margin: auto;
+    width: 55px;
+}
+
 .navbar-toggler {
     position: absolute;
     right: 0;
-    top: 48px;
-    right: 15PX;
     border: none;
     height: 44px;
     border-radius: 0;
@@ -77,11 +88,14 @@ a {
 }
 
 .navigation-text {
+    display: flex;
     font-size: 35px;
     color: #252525;
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: 400;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .navbar-light .navbar-nav .nav-link a {
@@ -141,18 +155,12 @@ a {
 
 @media (min-width: 768px) {
 
-    .navigation{
-        position: static;
-        box-shadow: none;
-    }
-
     .navbar-nav {
         text-align: center;
     }
 
     .navbar-toggler {
-        top: 61px;
-        right: 30px;
+        top: 12px;
     }
 
     .mobile-social-icons {
@@ -203,6 +211,7 @@ a {
         background: transparent;
         width: 100%;
         justify-content: flex-end;
+        flex-direction: row;
     }
 
     .navigation-p {
@@ -223,9 +232,9 @@ a {
     }
 
     .link-to {
-        padding: 0 0px 5px 10px;
-        font-size: 25px; 
-        color: #252525;
+        padding: 0 0px 5px 25px;
+        font-size: 20px; 
+        color: #585858;
     }
 
     .bottom-nav {
