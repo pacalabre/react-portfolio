@@ -53,7 +53,7 @@ a:hover {
 body {
   position: relative;
   min-height: 100vh;
-  background-image: url('../src/assets/mural-background.png');
+  background-image: url('../src/assets/mural-background.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
