@@ -12,7 +12,9 @@ class About extends React.Component {
     render() {
         if(!this.props.about.content) {
             return (
-                <div className="loader-circle"></div>
+                <div className="loading-container">
+                    <div className="loader-circle"></div>
+                </div>
             )
         }
         return (
