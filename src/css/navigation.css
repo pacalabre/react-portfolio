@@ -225,6 +225,14 @@ button.navbar-toggler.collapsed {
 
 @media (min-width: 992px) {
 
+    .show .navbar-nav {
+        background: transparent;
+        position: static;
+        flex-direction: row;
+        padding: initial;
+        padding-top: inherit;
+    }
+
     .navbar-nav {
         border: none;
     }
