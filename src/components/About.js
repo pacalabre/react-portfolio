@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/about.css';
 import aboutVid from '../assets/about.mp4';
 import aboutVidPoster from '../assets/sea.jpg';
-import seattleView from '../assets/sea1.jpg';
+import seattleView from '../assets/sea1.png';
 import mtns from '../assets/mtns-lake-transparent.png';
 import mtnsInside from '../assets/mtn-lake-center.png';
 

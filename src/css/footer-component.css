@@ -1,6 +1,8 @@
 footer {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Cooper Hewitt', 'Inter', 'Arial';
+    font-weight: 600;
     text-align: center;
     padding-bottom: 20px;
     background: white;
+    font-size: 12px;
 }
