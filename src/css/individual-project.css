@@ -19,6 +19,12 @@ img {
     text-transform: uppercase;
     display: block;
     padding-left: 40px;
+    
+}
+
+.breadcrumb-divider {
+    font-weight: 600;
+    font-family: 'Cooper Hewitt','Inter', Arial, Helvetica, sans-serif;
 }
 
 .project-post-content a {
@@ -33,7 +39,7 @@ img {
     font-size: 19px;
     text-transform: uppercase;
     padding: 7px 10px 2px 10px;
-    font-family: 'Cooper Hewitt', 'Inter', Arial, Helvetica, sans-serif;;
+    font-family: 'Cooper Hewitt', 'Inter', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
@@ -43,10 +49,14 @@ img {
 
 .breadcrumbs a {
     font-weight: 200;
+    font-family: 'Cooper Hewitt','Inter', Arial, Helvetica, sans-serif;
+    letter-spacing: .1em;
 }
 
 .breadcrumbs span {
     font-weight: 600;
+    font-family: 'Cooper Hewitt','Inter', Arial, Helvetica, sans-serif;
+    letter-spacing: .1em;
 }
 
 .project-img-and-title-section {

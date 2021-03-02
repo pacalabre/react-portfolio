@@ -68,7 +68,7 @@ class IndividualProject extends React.Component {
                 <Navigation  />
                 <main className="individual-project-main">
                     <div className="breadcrumbs">
-                    <Link to="/">home</Link> / <Link to="/#work">work</Link> / <span>{this.state.currentPost.title.rendered}</span>
+                    <Link to="/">home</Link> <span className="breadcrumb-divider">/</span> <Link to="/#work">work</Link><span className="breadcrumb-divider"> /</span> <span>{this.state.currentPost.title.rendered}</span>
                     </div>
                     <div className="project-post-content">
                     <section className="project-img-and-title-section">
