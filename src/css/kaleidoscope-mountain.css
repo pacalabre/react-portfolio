@@ -70,7 +70,7 @@
 
     .kaleidoscope-mountain-container {
         align-items: center;
-        background-image: linear-gradient(to bottom, transparent, white);
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.001) 0%, white);
     }
 
     .kaleidoscope-mountain-p {
