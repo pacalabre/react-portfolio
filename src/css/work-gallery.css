@@ -41,8 +41,9 @@
 }
 
 .work-gallery-project-name {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
+    font-family: 'Cooper Hewitt','Inter', Arial, Helvetica, sans-serif;
     display: inline-flex;
     margin: 10px 5px 0 5px;
     color: #242424;
