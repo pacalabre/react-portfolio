@@ -32,7 +32,8 @@ input, textarea {
     width: 100%;
     max-width: 600px;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 30%) inset;
-    border: none;
+    border: 1px #e0e0e0 solid;
+    border-radius: 1px;
 }
 
 textarea {
