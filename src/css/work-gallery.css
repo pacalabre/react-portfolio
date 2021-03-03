@@ -29,7 +29,7 @@
 }
 
 .work-gallery-img {
-    max-width: 100%;;
+    max-width: 100%;    
 }
 
 .work-gallery-project-text {
@@ -73,6 +73,11 @@
 
     .work-gallery {
         margin-top: 0;
+    }
+
+    .work-gallery-img {
+        width: 70%;
+        margin: 40px auto;
     }
 
     .work-gallery-div:hover {

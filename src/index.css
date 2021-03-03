@@ -20,6 +20,7 @@
 
 h1,h2,h3,h4,h5,h6,p,a,input,ul,li,span {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #585858;
 }
 
 h2 {
@@ -43,6 +44,14 @@ h2::after {
 
 button {
   font-family: 'Cooper Hewitt', 'Inter', Arial, Helvetica, sans-serif;;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 40px auto 80px auto;
+  display: inline;
+  display: block;
 }
 
 body {
@@ -97,13 +106,6 @@ body {
 
 #root {
   padding-bottom: 10rem;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5.5rem;  
 }
 
 @media ( min-width: 768px ) {
