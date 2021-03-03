@@ -30,4 +30,8 @@
     .footer {
         height: 15.5rem;
     }
+
+    .footer-span {
+        top: 90%;
+    }
 }
