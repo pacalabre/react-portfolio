@@ -7,6 +7,20 @@
     left: -400px;
 } 
 
+.collapsing {
+    position: absolute;
+    height: auto;
+    overflow: initial;
+    transition: none;
+}
+
+.home-navbar-link-container {
+    justify-content: initial;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .home-navigation .navbar-toggler {
     top:12px;
     right: 14px;
@@ -78,7 +92,7 @@
 
 .navbar-nav {
     left: -400px;
-    transition-duration: .2s;
+    transition-duration: inherit;
 } 
 
 @media (min-width: 540px) {
