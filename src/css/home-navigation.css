@@ -37,6 +37,15 @@
     text-align: center;
 }
 
+.logo-text {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Cooper Hewitt';
+    color: #575757;
+    text-transform: none;
+    letter-spacing: 1.65px;
+}
+
 .home-nav-link-to {
     padding: 7px;
     font-weight: 600;
@@ -55,6 +64,22 @@
     max-width: 1000px;
 }
 
+.home-nav-link-home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px auto
+}
+
+.home-nav-link-home:after {
+    content: "";
+    width: 205px;
+    height: 9px;
+    background: #575757;
+    position: absolute;
+    bottom: 30px;
+}
+
 .home-navigation-text .navbar-toggler {
     position: absolute;
     right: 0;
@@ -66,8 +91,9 @@
 }
 
 .home-nav-logo {
-    width: 80%;
-    margin: 80px auto;
+    width: 205px;
+    height: 217px;
+    font-weight: bold;
 }
 
 .home-navigation-text {
@@ -76,6 +102,7 @@
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: 400;
+    margin: auto;
 }
 
 .home-nav-social-icons {
@@ -88,6 +115,7 @@
 
 .social-icons-a {
     color: white;
+    padding: 0 20px;
 }
 
 .navbar-nav {
@@ -116,12 +144,6 @@
         right: 30px;
     }
 
-    .home-nav-logo {
-        width: 80%;
-        margin: 40px auto;
-    }
-
-
     .home-nav-social-icons {
         width: 100%;
     }
@@ -148,8 +170,11 @@
     }
 
     .home-nav-logo {
-        width: 80%;
         margin: auto auto auto 0;
+    }
+
+    .home-nav-link-home {
+        margin: initial;
     }
 
     .home-navigation-text {
