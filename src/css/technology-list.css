@@ -30,6 +30,7 @@ path {
 
 .tech-svg svg {
     height: 125px;
+    max-width: 120px;
 }
 
 @media (min-width: 580px) {
