@@ -5,8 +5,8 @@ path {
     background: blue;
     background:#2c3e50;
     background:linear-gradient(
-         rgba(0, 0, 0, 0.25),
-         rgba(0, 0, 0, 0.25) ),
+         rgba(0, 0, 0, 0.15),
+         rgba(0, 0, 0, 0.15) ),
           url('../assets/mural.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,11 +16,11 @@ path {
 
 .tech-list-ul {
     display: grid;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-template-columns: auto auto;
     list-style: none;
     padding:  40px 0;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: auto;  
 }
 
@@ -29,8 +29,14 @@ path {
 }
 
 .tech-svg svg {
-    width: 100%;
     height: 125px;
+}
+
+@media (min-width: 580px) {
+    .tech-list-ul {
+        justify-content: space-evenly;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -40,6 +46,7 @@ path {
     }
 
     .tech-svg svg {
+        width: 100%;
         height: 110px;
     }
   
