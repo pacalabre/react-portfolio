@@ -5,8 +5,8 @@ path {
     background: blue;
     background:#2c3e50;
     background:linear-gradient(
-         rgba(0, 0, 0, 0.15),
-         rgba(0, 0, 0, 0.15) ),
+         rgba(0, 0, 0, 0.25),
+         rgba(0, 0, 0, 0.25) ),
           url('../assets/mural.jpg');
     background-size: cover;
     background-repeat: no-repeat;
