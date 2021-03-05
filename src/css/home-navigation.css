@@ -108,9 +108,18 @@
 .home-nav-social-icons {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 60px;
     font-size: 35px;
+}
+
+.home-nav-social-icons svg {
+    width: 40px;
+    height: 40px;
+}
+
+.home-nav-social-icons path, .home-nav-social-icons polygon, .home-nav-social-icons circle {
+    fill: white;
 }
 
 .social-icons-a {
@@ -215,11 +224,21 @@
 
     .home-nav-social-icons {
         margin-top: 0;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
     }
 
-    .social-icons-a {
-        color: #585858;
+    .home-nav-social-icons svg {
+        height: 30px;
+        width: 30px;
+        opacity: .75;
+    }
+
+    .home-nav-social-icons path, .home-nav-social-icons polygon, .home-nav-social-icons circle {
+        fill: #575757;
+    }
+
+    .social-icons-a:hover path, .social-icons-a:hover polygon, .social-icons-a:hover circle {
+        fill: #4D84CB;
     }
 }
