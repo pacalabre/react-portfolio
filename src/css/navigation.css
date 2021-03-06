@@ -51,7 +51,7 @@ a {
 
 .navbar-toggler {
     position: absolute;
-    right: 0;
+    right: 20px;
     border: none;
     height: 44px;
     border-radius: 0;
@@ -69,7 +69,7 @@ a {
     width: 35px;
     background: #2c3e50;;
     display: block;
-    margin: 5px;
+    margin: 5px 0;
     transition:.2s;
 }
 
