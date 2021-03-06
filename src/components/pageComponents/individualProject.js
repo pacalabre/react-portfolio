@@ -74,18 +74,18 @@ class IndividualProject extends React.Component {
                     <section className="project-img-and-title-section">
                         <div>
                             <img alt="company logo" className="project-img" src={this.state.currentPost.jetpack_featured_media_url }/>
-                            <p dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.excerpt.rendered)}}></p>
                             <div className="tech-list">
-                                <i className="devicon-html5-plain-wordmark colored dev-icon"></i>
-                                <i className="devicon-css3-plain-wordmark colored dev-icon"></i>
+                                <i className="devicon-html5-plain-wordmark dev-icon"></i>
+                                <i className="devicon-css3-plain-wordmark dev-icon"></i>
                                 {
                                     this.state.currentPost['_embedded']['wp:term'][0].map(tagName =>
                                         <i key={tagName.id} 
-                                            className={"devicon-"+`${tagName.name === `angularjs` || tagName.name === `javascript` ?  tagName.name+"-plain" : tagName.name+"-plain-wordmark"}`+" dev-icon colored"}>
+                                            className={"devicon-"+`${tagName.name === `angularjs` || tagName.name === `javascript` ?  tagName.name+"-plain" : tagName.name+"-plain-wordmark"}`+" dev-icon"}>
                                         </i>
                                     )
                                 }
                             </div>
+                            <p className="project-summary" dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.excerpt.rendered)}}></p>
                         </div>
                     </section>
                         <section className="project-img-section">

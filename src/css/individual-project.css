@@ -10,8 +10,7 @@
 .breadcrumbs {
     text-transform: uppercase;
     display: block;
-    padding-left: 40px;
-    
+    text-align: center;
 }
 
 .breadcrumb-divider {
@@ -25,7 +24,7 @@
     background-color: #3498db;
     color: white;
     text-align: center;
-    margin: 0 5px;
+    margin: 10px 20px;
     display: block;
     border-radius: 0px;
     font-size: 19px;
@@ -33,10 +32,13 @@
     padding: 7px 10px 2px 10px;
     font-family: 'Cooper Hewitt', 'Inter', Arial, Helvetica, sans-serif;
     font-weight: 600;
+    width: 220px;
 }
 
 .project-img {
+    margin-top: 0;
     margin-bottom: 0;
+    width: 70%;
 }
 
 .breadcrumbs a {
@@ -52,30 +54,45 @@
 }
 
 .project-img-and-title-section {
-    margin: 40px;
+    margin: 0 40px 40px 40px;
     text-align: center;
 }
+
+.project-summary {
+    margin:  30px auto;
+    font-size: 18px;
+}
+
 .tech-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .dev-icon {
-    font-size: 60px;
+    font-size: 40px;
     padding: 0 5px;
     margin: 5px 0;
+    color: #585858;
+    opacity: .7;
+}
+
+.project-img-section div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .project-img-section img {
     min-height: 200px;
     min-width: 350px;
     padding: 0 20px;
+    margin: 40px auto;
 }
 
 .project-img-section p {
-    display: inline-block;
-    margin: auto;
-    text-align: center;
+    display: grid;
+     margin: auto;
+    text-align: center; 
 }
 
 .project-img-and-title-section a {
@@ -92,36 +109,35 @@
     }
 
     .project-img-section img {
-        width: 70%;
-        margin: 40px auto;
+        max-width: 750px;
+    }
+
+    .project-img-section div {
+        flex-direction: row;
     }
 
     .breadcrumbs {
-        margin: 0 20px;
+        margin: 0 30px;
+        text-align: right;
     }
 
     .project-post-content {
         display: flex;
+        flex-direction: column;
     }
 
     .project-img-and-title-section {
         margin: 0 40px;
-        width: 40%;
         text-align: left;
     }
     
     .tech-list {
-        justify-content: left;
-    }
-
-    .project-img {
-        margin-top: 0;
-        margin-left: 0;
+        justify-content: center;
     }
 
     .project-img-section {
-        width: 60%;
         margin-bottom: 80px;
+        display: flex;
     }
 
     .project-img-section img {
@@ -129,7 +145,7 @@
     }
 
     .project-img {
-        width: 70%;
+        width: 30%;
     }
 
     .project-post-content a:hover {
