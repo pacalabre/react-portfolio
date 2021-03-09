@@ -26,7 +26,7 @@ form {
     color: var(--black);;
 }
   
-input, textarea {
+.contact-section input, .contact-section textarea {
     display: block;
     margin: 0px auto 20px auto;
     width: 100%;
@@ -34,35 +34,42 @@ input, textarea {
     box-shadow: 0px 1px 5px rgb(0 0 0 / 30%) inset;
     border: 1px #e0e0e0 solid;
     border-radius: 1px;
+    height: 45px;
 }
 
-textarea {
+.contact-section textarea {
     height: 150px;
 }
 
 .contact-button-container {
     align-self: center;
+    width: 100%;
 }
 
 form .submit-button {
-    min-width: 8rem;
+    min-width: 100%;
     border: none;
     background-color: var(--blue);
     color: white;
     text-align: center;
     margin: 20px auto 0 auto;
     display: block;
-    padding: 7px 10px 2px 10px;
+    padding: 12px 10px;
     border-radius: 0px;
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'Cooper Hewitt','Inter', Arial, Helvetica, sans-serif;
     font-weight: 600;
+    height: 45px;
 }
 
 @media (min-width: 768px) {
     input, textarea {
         max-width: 500px;
+    }
+
+    form .submit-button {
+        min-width: 10rem;
     }
 
     .submit-button:hover {
