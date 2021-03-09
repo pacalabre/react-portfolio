@@ -1,7 +1,6 @@
 .hero-container {
     display: flex;
     flex-direction: column-reverse;
-    gap: 20px;
     max-width: 960px;
     justify-content: center;
     align-items: center;
@@ -36,6 +35,7 @@
     background-size: cover;
     background-position: center center;
     width: 100%;
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -52,6 +52,11 @@
 
     .headshot {
         margin-top: 0;
+    }
+
+    .seattle {
+        margin-top: initial;
+        margin-right: 20px;
     }
 
     .about-video {
