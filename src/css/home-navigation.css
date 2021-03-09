@@ -22,13 +22,9 @@
 }
 
 .home-navigation .navbar-toggler {
-    top:12px;
+    top: 7px;
     right: 14px;
 }
-
-/* .home-navigation button.navbar-toggler.collapsed {
-    position: fixed;
-} */
 
 .home-navbar-link-container {
     justify-content: center;

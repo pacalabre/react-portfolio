@@ -56,8 +56,8 @@ a {
 }
 
 .toggle-icon-line {
-    height: 5px;
-    width: 35px;
+    height: 3px;
+    width: 27px;
     background: var(--black);;
     display: block;
     margin: 5px 0;
