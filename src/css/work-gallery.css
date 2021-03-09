@@ -46,7 +46,7 @@
     font-family: 'Cooper Hewitt','Inter', Arial, Helvetica, sans-serif;
     display: inline-flex;
     margin: 10px 5px 0 5px;
-    color: #242424;
+    color: var(--black);
     text-transform: uppercase;
 }
 
@@ -55,7 +55,7 @@
     font-weight: 200;
     display: block;
     padding: 0 5px 0px 5px;
-    color: #242424;
+    color: var(--black);
     margin-bottom: 10px;
 }
 
@@ -90,7 +90,7 @@
     }
 
     .work-gallery-div:hover .work-gallery-project-name {
-        color: #3498db;
+        color: var(--blue);
         transition: .5s;
     }
 

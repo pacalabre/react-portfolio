@@ -50,7 +50,7 @@
 }
 
 .link-wrapper path, .link-wrapper polygon, .link-wrapper circle {
-    fill: #585858;
+    fill:var(--black);
     opacity: .75;
 }
 

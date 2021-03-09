@@ -1,21 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter');
-
-@font-face {
-  font-family: "Cooper Hewitt";
-  src: url("./assets/fonts/cooper_hewitt/CooperHewitt-Book.otf") format("opentype");
-  font-weight: 100;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Inter', Arial, Helvetica, sans-serif;;
+	vertical-align: baseline;
 }
 
-@font-face {
-  font-family: "Cooper Hewitt";
-  src: url("./assets/fonts/cooper_hewitt/CooperHewitt-Medium.otf") format("opentype");
-  font-weight: normal;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-@font-face {
-  font-family: "Cooper Hewitt";
-  src: url("./assets/fonts/cooper_hewitt/CooperHewitt-Semibold.otf") format("opentype");
-  font-weight: bold;
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 h1,h2,h3,h4,h5,h6,p,a,input,ul,li,span {
@@ -30,6 +54,7 @@ h2 {
   text-transform: uppercase;
   font-family: 'Cooper Hewitt','Inter', Arial, Helvetica, sans-serif;;
   font-weight: 600;
+  color: var(--black);
 }
 
 h2::after {
@@ -115,15 +140,7 @@ body {
 
 @media ( min-width: 992px ) {
   a:hover {
-    color: #3498db;
-  }
-
-  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #585858;
-  }
-
-  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #3498db;
+    color: var(--blue-hover);
   }
 }
 

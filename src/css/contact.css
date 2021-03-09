@@ -23,7 +23,7 @@ form {
     font-size: 14px;
     padding-bottom: 0;
     margin-bottom: 0;
-    color: #585858;
+    color: var(--black);;
 }
   
 input, textarea {
@@ -47,7 +47,7 @@ textarea {
 form .submit-button {
     min-width: 8rem;
     border: none;
-    background-color: #3498db;
+    background-color: var(--blue);
     color: white;
     text-align: center;
     margin: 20px auto 0 auto;
@@ -67,7 +67,7 @@ form .submit-button {
 
     .submit-button:hover {
         text-decoration: none;
-        background-color: #3579ac;
+        background-color: var(--blue-hover);
         box-shadow: 5px 5px 10px rgba(0,0,0,.3);
         transition: .3s;
     }

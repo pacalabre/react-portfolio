@@ -33,7 +33,7 @@ class About extends React.Component {
                         <div className="content-link-wrapper">
                             <div className="bio-post-content" dangerouslySetInnerHTML={{ __html: xss(this.props.about.content.rendered)}}></div>
                             <div className="link-wrapper">
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pacalabre/">
+                                <a className ="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pacalabre/">
                                         <span className="about-social">
                                             <svg width="181px" height="179px" viewBox="0 0 181 179" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                                 <title>Linkedin Icon</title>
@@ -53,7 +53,7 @@ class About extends React.Component {
                                             </svg>
                                         </span>
                                 </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/pacalabre">
+                                <a className ="social-icons-a" target="_blank" rel="noopener noreferrer" href="https://github.com/pacalabre">
                                     <span className="about-social">         
                                         <svg width="115px" height="133px" viewBox="0 0 115 133" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                             <title>Github Icon</title>
