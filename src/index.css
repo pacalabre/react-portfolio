@@ -129,13 +129,7 @@ body {
 }
 
 #root {
-  padding-bottom: 10rem;
-}
-
-@media ( min-width: 768px ) {
-  #root {
-    padding-bottom: 5rem;
-  }
+  padding-bottom: 5rem;
 }
 
 @media ( min-width: 992px ) {

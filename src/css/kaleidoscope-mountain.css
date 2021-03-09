@@ -1,7 +1,6 @@
 .kaleidoscope-mountain-container {
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
 }
 
 .kaleidoscope-mountain {
@@ -16,7 +15,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 40% 55%;
-    min-height: 490px;
+    padding: 100px 0px;
     width: 100%;
 }
 
@@ -36,9 +35,6 @@
 }
 
 .kaleidoscope-mountain-p-background {
-    z-index: 2000;
-    height: auto;
-    width: 100%;
     display: flex;
 }
 
@@ -61,6 +57,11 @@
 
 
 @media (min-width: 540px) {
+
+    .kaleidoscope-mountain-container {
+        padding: 100px 0;
+    }
+    
     .kaleidoscope-mountain-p p, .kaleidoscope-mountain-p span {
         font-size: 3em;
     }

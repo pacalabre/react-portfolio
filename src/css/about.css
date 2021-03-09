@@ -6,22 +6,6 @@
     align-items: center;
 }
 
-.mtns-lake-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    animation: spin 200s linear infinite;
-    width: 100%;
-}
-
-.mnt-lake-img-inside {
-    animation: spin-right 100s linear infinite;
-    width: 75%;
-}
-
 .headshot, .seattle {
     height: 450px;
     background: url('../assets/timelapse-headshot-compressed.jpg');
