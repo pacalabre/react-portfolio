@@ -101,6 +101,10 @@
   color: var(--black);
 }
 
+.bio-post-content p, .project-summary p {
+  padding: 10px 0;
+}
+
 
 @media ( min-width: 768px ) {
   .breadcrumbs {
