@@ -31,7 +31,7 @@ a {
 .navigation-text {
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .logo {
@@ -42,7 +42,7 @@ a {
 
 .navbar-toggler {
     position: absolute;
-    right: 20px;
+    right: 10px;
     border: none;
     height: 44px;
     border-radius: 0;
