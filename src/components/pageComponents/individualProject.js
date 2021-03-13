@@ -85,10 +85,9 @@ class IndividualProject extends React.Component {
                                     )
                                 }
                             </div>
-                            <p className="project-summary" dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.excerpt.rendered)}}></p>
                         </div>
                     </section>
-                        <section className="project-img-section">
+                        <section className="project-img-section" >
                             <p dangerouslySetInnerHTML={{ __html: xss(this.state.currentPost.content.rendered)}}></p>
                         </section>
                     </div>
