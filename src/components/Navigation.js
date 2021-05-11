@@ -19,7 +19,7 @@ class Navigation extends React.Component {
     
     render() {
         return (
-            <Navbar className="navigation" expand="lg">
+            <Navbar className="navigation global-navbar" expand="lg">
                 <div className="navigation-text">
                     <Link className="nav-link-home"  to="/">
                         <h1 className="navigation-h1">

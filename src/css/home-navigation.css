@@ -26,6 +26,11 @@
     right: 14px;
 }
 
+.home-navigation .navbar-toggler.collapsed {
+    position: fixed;
+    z-index: 30000;
+}
+
 .home-navbar-link-container {
     justify-content: center;
     display: flex;
