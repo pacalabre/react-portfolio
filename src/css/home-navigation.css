@@ -39,13 +39,12 @@
 }
 
 .logo-text {
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Cooper Hewitt';
     color: var(--black);
     text-transform: none;
     letter-spacing: 1.65px;
-    text-transform: uppercase;
 }
 
 .home-nav-link-to {
@@ -79,7 +78,7 @@
     height: 9px;
     background: #575757;
     position: absolute;
-    bottom: 32px;
+    bottom: 37px;
 }
 
 .home-navigation-text .navbar-toggler {
