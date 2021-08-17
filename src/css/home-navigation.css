@@ -45,6 +45,7 @@
     color: var(--black);
     text-transform: none;
     letter-spacing: 1.65px;
+    text-transform: uppercase;
 }
 
 .home-nav-link-to {
@@ -78,7 +79,7 @@
     height: 9px;
     background: #575757;
     position: absolute;
-    bottom: 30px;
+    bottom: 32px;
 }
 
 .home-navigation-text .navbar-toggler {

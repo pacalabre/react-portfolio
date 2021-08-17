@@ -39,7 +39,7 @@ class HomeNavigation extends React.Component {
                             </g>
                         </g>
                     </svg>
-                    <span className="logo-text">UI Developer & Designer</span>
+                    <span className="logo-text">Front End Developer</span>
                 </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle children={this.getNavbarToggleIcon()} aria-controls="responsive-navbar-nav" />
